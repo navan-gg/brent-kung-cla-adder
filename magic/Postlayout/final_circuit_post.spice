@@ -1,0 +1,2106 @@
+* NGSPICE file created from cla_final.ext - technology: scmos
+.include "TSMC_180nm.txt"
+.global Vdd Gnd 
+
+
+M1000 a_804_1313# a_801_1261# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=25610p ps=13262u
+M1001 VDD a_987_1133# a_1009_1171# w_996_1165# cmosp w=20u l=2u
++  ad=51240p pd=25396u as=120p ps=52u
+M1002 a_92_201# B3 GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1003 a_967_1155# a_967_828# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1004 a_n336_426# a_n664_426# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1005 VDD a_1444_844# a_1384_934# w_1431_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1006 a_n575_16# a_n613_0# VDD w_n581_3# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1007 a_201_875# B0 a_165_875# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1008 a_1022_209# P4 VDD w_1016_196# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1009 a_847_806# S1 GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1010 VDD a_987_806# a_1009_844# w_996_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1011 GND a_402_792# a_415_803# Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=110p ps=62u
+M1012 a_n1144_505# a_n1234_443# VDD w_n1134_430# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1013 a_n1144_266# a_n1234_204# VDD w_n1134_191# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1014 a_307_338# P1 VDD w_301_325# cmosp w=20u l=2u
++  ad=340p pd=154u as=0p ps=0u
+M1015 VDD a_165_931# P0 w_255_884# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1016 a_637_450# a_548_465# VDD w_624_470# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1017 a_n1092_204# a_n1234_204# a_n1144_266# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1018 a_1402_1155# a_1402_828# VDD w_1416_1070# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1019 a_n1092_443# a_n1234_443# a_n1144_505# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1020 a_1239_934# a_1299_844# a_1299_986# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1021 VDD a_967_828# a_941_934# w_949_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1022 a_n1144_22# a_n1144_79# VDD w_n1134_69# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1023 VDD a_74_281# a_165_259# w_159_246# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1024 a_n158_718# a_n248_656# VDD w_n148_643# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1025 a_452_1019# a_325_985# a_416_1019# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1026 a_n907_64# a_n995_1# VDD w_n913_51# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1027 a_804_986# a_801_934# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1028 a_691_664# a_564_630# a_655_664# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1029 GND a_n664_187# a_n539_203# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1030 a_n538_1103# a_n663_1040# a_n574_1103# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1031 GND a_n664_426# a_n539_442# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1032 VDD A4 a_60_18# w_54_5# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1033 a_58_383# B2 VDD w_52_370# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1034 a_944_950# a_941_934# VDD w_931_944# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1035 VDD a_869_1171# a_809_1261# w_856_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1036 a_201_315# a_74_281# a_165_315# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1037 VDD a_n1323_427# a_n1234_443# w_n1240_430# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1038 a_n995_1# a_n1323_1# VDD w_n1008_19# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1039 a_n247_1103# a_n335_1040# VDD w_n253_1090# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1040 a_n664_640# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1041 a_557_116# P2 a_557_108# Gnd cmosn w=25u l=2u
++  ad=150p pd=62u as=150p ps=62u
+M1042 GND a_n248_250# a_n106_268# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1043 VDD a_n907_490# A2 w_n807_495# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1044 a_869_1313# S1o GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1045 VDD a_n995_880# a_n907_896# w_n913_883# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1046 a_869_844# a_847_806# a_869_880# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1047 a_n1272_1# A4i VDD w_n1285_19# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1048 a_738_185# P4 GND Gnd cmosn w=30u l=2u
++  ad=180p pd=72u as=0p ps=0u
+M1049 GND a_75_98# a_202_76# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1050 a_1112_1155# a_1112_828# VDD w_1126_1070# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1051 GND a_n995_880# a_n871_896# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1052 a_864_128# a_477_90# GND Gnd cmosn w=10u l=2u
++  ad=180p pd=96u as=0p ps=0u
+M1053 B4 a_n158_78# VDD w_n148_68# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1054 GND P3 a_524_246# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1055 a_n663_1040# CLK VDD w_n676_1058# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1056 a_n765_82# a_n817_79# A4 Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1057 VDD a_325_985# a_416_963# w_410_950# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1058 G1 a_58_637# VDD w_125_645# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1059 GND A4 a_111_98# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1060 VDD a_n485_208# a_n485_265# w_n475_190# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1061 VDD a_n485_447# a_n485_504# w_n475_429# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1062 a_1089_950# a_1094_934# a_1089_986# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1063 S2 a_655_608# VDD w_745_617# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1064 a_1299_986# a_1234_950# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1065 S0 a_416_963# VDD w_506_972# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1066 a_n1198_704# a_n1323_641# a_n1234_704# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1067 a_n1198_943# a_n1323_880# a_n1234_943# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1068 a_411_467# P1 a_411_459# Gnd cmosn w=40u l=2u
++  ad=240p pd=92u as=240p ps=92u
+M1069 VDD A4i a_n1234_64# w_n1240_51# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1070 a_667_1261# a_727_1171# a_727_1313# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1071 VDD a_296_624# S1 w_386_577# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1072 a_n539_16# a_n613_0# a_n575_16# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1073 a_n286_876# a_n485_897# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1074 a_941_934# S2 VDD w_949_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1075 a_1086_934# S3 VDD w_1094_838# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1076 a_n1144_901# a_n1144_958# VDD w_n1134_948# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1077 S4o a_1239_1261# a_1234_1313# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1078 VDD a_1384_934# a_1379_950# w_1366_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1079 GND a_73_717# a_200_695# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1080 a_n817_266# a_n907_204# VDD w_n807_191# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1081 G1 a_58_637# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1082 a_n817_505# a_n907_443# VDD w_n807_430# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1083 a_n1092_961# a_n1144_958# a_n1144_901# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1084 a_241_590# C1 a_205_590# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1085 a_1376_1261# a_1402_1155# a_1397_1207# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1086 VDD A0 a_165_931# w_159_918# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1087 a_59_201# B3 VDD w_53_188# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1088 G2 a_58_383# VDD w_125_391# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1089 a_967_828# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1090 GND a_n248_489# a_n106_507# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1091 GND a_n1144_22# a_n871_64# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1092 VDD a_1299_1171# a_1239_1261# w_1286_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1093 VDD P3 a_389_90# w_382_77# cmosp w=10u l=2u
++  ad=0p pd=0u as=180p ps=96u
+M1094 a_433_212# C3 a_397_212# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1095 VDD A0 a_74_897# w_68_884# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1096 a_296_463# a_164_441# P2 Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1097 a_n106_957# a_n158_954# B0 Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1098 a_685_828# CLK VDD w_699_742# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1099 a_610_99# a_525_100# VDD w_597_119# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1100 a_n539_250# a_n664_187# a_n575_250# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1101 a_n539_489# a_n664_426# a_n575_489# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1102 a_332_568# C1 a_296_568# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1103 a_389_90# P2 VDD w_382_77# cmosp w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1104 GND a_73_463# a_200_441# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1105 a_685_108# P3 a_685_100# Gnd cmosn w=40u l=2u
++  ad=240p pd=92u as=240p ps=92u
+M1106 a_n106_81# a_n158_78# B4 Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1107 a_n1234_251# a_n1323_188# VDD w_n1240_238# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1108 a_165_875# B0 VDD w_159_862# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1109 a_n1234_490# a_n1323_427# VDD w_n1240_477# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1110 a_1086_1261# a_1112_1155# a_1107_1207# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1111 a_1009_880# a_967_828# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1112 a_725_405# G2 a_758_405# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1113 a_n907_704# a_n995_641# VDD w_n913_691# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1114 a_n907_943# a_n995_880# VDD w_n913_930# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1115 a_n613_0# B4i GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1116 a_667_934# a_727_844# a_727_986# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1117 a_413_114# P1 a_413_106# Gnd cmosn w=30u l=2u
++  ad=180p pd=72u as=180p ps=72u
+M1118 a_n871_943# a_n995_880# a_n907_943# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1119 a_n871_704# a_n995_641# a_n907_704# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1120 a_60_18# A4 a_93_18# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1121 a_n106_203# a_n248_203# a_n158_265# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1122 GND a_n485_897# a_n433_892# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1123 VDD a_1422_806# a_1444_844# w_1431_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1124 GND A3 a_n765_204# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1125 a_n485_208# a_n485_265# VDD w_n475_255# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1126 a_735_341# a_678_338# a_735_333# w_729_304# cmosp w=100u l=2u
++  ad=600p pd=212u as=600p ps=212u
+M1127 a_n106_442# a_n248_442# a_n158_504# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1128 VDD a_1009_1171# a_949_1261# w_996_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1129 VDD a_n485_21# a_n248_63# w_n254_50# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1130 a_525_100# P2 VDD w_519_87# cmosp w=20u l=2u
++  ad=340p pd=154u as=0p ps=0u
+M1131 a_1009_1313# S2o GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1132 a_1234_986# a_1231_934# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1133 A0 a_n817_958# VDD w_n807_948# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1134 a_706_185# P4 VDD w_700_172# cmosp w=20u l=2u
++  ad=220p pd=102u as=0p ps=0u
+M1135 a_n336_0# a_n664_0# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1136 a_864_128# G4 GND Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1137 VDD a_n485_897# a_n248_939# w_n254_926# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1138 VDD P1 a_379_459# w_373_446# cmosp w=20u l=2u
++  ad=0p pd=0u as=240p ps=104u
+M1139 a_165_315# a_74_281# VDD w_159_302# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1140 a_1422_806# Cout GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1141 a_n945_188# a_n1144_209# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1142 GND a_n485_21# a_n212_63# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1143 GND a_n336_187# a_n212_203# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1144 GND a_n336_426# a_n212_442# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1145 VDD a_1384_1261# Couto w_1366_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1146 a_827_828# CLK VDD w_841_742# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1147 a_1086_1261# a_1089_950# VDD w_1094_1165# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1148 a_297_281# a_165_259# P3 Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1149 a_725_405# P3 VDD w_719_392# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1150 a_n432_1121# a_n484_1118# a_n484_1061# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1151 VDD P3 a_488_246# w_482_233# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1152 a_n336_640# a_n664_640# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1153 a_91_637# B1 GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1154 a_202_132# a_75_98# a_166_132# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1155 VDD G3 a_852_205# w_846_192# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1156 a_1379_1313# a_1376_1261# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1157 a_659_1261# a_685_1155# a_680_1207# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1158 VDD a_1422_1133# a_1444_1171# w_1431_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1159 GND A3i a_n1198_251# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1160 a_869_1207# a_827_1155# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1161 Cin a_n157_1118# VDD w_n147_1108# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1162 GND A2i a_n1198_490# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1163 a_962_1207# a_944_950# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1164 a_n248_892# a_n286_876# VDD w_n254_879# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1165 a_1376_934# a_1402_828# a_1397_880# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1166 GND a_637_450# a_695_497# Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=120p ps=64u
+M1167 VDD a_967_1155# a_941_1261# w_949_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1168 a_809_934# a_869_844# a_869_986# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1169 a_1132_806# S3 VDD w_1126_793# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1170 VDD B3 a_n158_265# w_n148_190# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1171 a_n485_447# a_n485_504# VDD w_n475_494# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1172 VDD B2 a_n158_504# w_n148_429# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1173 VDD a_73_717# a_164_695# w_158_682# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1174 a_200_497# a_73_463# a_164_497# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1175 a_n1198_17# a_n1272_1# a_n1234_17# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1176 VDD a_1094_1261# S3o w_1076_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1177 a_727_1171# a_705_1133# a_727_1207# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1178 a_n106_721# a_n158_718# B1 Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1179 GND a_n907_943# a_n765_961# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1180 GND a_n907_704# a_n765_722# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1181 GND a_1022_209# a_1149_187# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1182 GND a_n575_250# a_n433_268# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1183 a_n945_641# a_n1144_662# VDD w_n958_659# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1184 GND a_n664_640# a_n539_656# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1185 VDD A4 a_n817_79# w_n807_4# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1186 a_662_950# a_667_934# a_662_986# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1187 VDD C2 a_655_664# w_649_651# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1188 a_1089_1313# a_1086_1261# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1189 a_685_100# P4 GND Gnd cmosn w=40u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1190 VDD a_1132_1133# a_1154_1171# w_1141_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1191 VDD a_n1323_641# a_n1234_657# w_n1240_644# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1192 a_n945_427# a_n1144_448# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1193 VDD P3 a_653_100# w_647_87# cmosp w=20u l=2u
++  ad=0p pd=0u as=240p ps=104u
+M1194 VDD a_n575_63# a_n485_21# w_n475_68# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1195 a_659_1261# a_662_950# VDD w_667_1165# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1196 a_475_364# P1 a_475_356# Gnd cmosn w=40u l=2u
++  ad=240p pd=92u as=240p ps=92u
+M1197 a_542_338# a_443_348# VDD w_529_358# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1198 GND a_325_985# a_452_963# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1199 GND C4 a_1058_209# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1200 a_397_212# C3 VDD w_391_199# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1201 a_n664_876# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1202 a_1397_880# Cout GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1203 a_n1323_1# CLK VDD w_n1336_19# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1204 VDD a_75_98# a_166_76# w_160_63# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1205 a_n248_16# a_n286_0# VDD w_n254_3# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1206 GND a_849_125# a_864_128# Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1207 a_374_702# P1 a_406_710# Gnd cmosn w=30u l=2u
++  ad=150p pd=70u as=180p ps=72u
+M1208 VDD a_n485_661# a_n485_718# w_n475_643# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1209 a_296_568# C1 VDD w_290_555# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1210 VDD a_73_463# a_164_441# w_158_428# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1211 a_n765_657# a_n907_657# a_n817_719# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1212 a_n765_896# a_n907_896# a_n817_958# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1213 P2 a_164_441# VDD w_254_450# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1214 GND a_n575_63# a_n433_81# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1215 a_987_1133# a_944_950# VDD w_981_1120# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1216 VDD a_n485_661# a_n248_703# w_n254_690# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1217 VDD a_n1144_209# a_n907_251# w_n913_238# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1218 a_542_338# a_443_348# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1219 a_727_1171# a_685_1155# VDD w_714_1165# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1220 a_n663_1040# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1221 a_486_885# a_448_866# a_486_877# w_480_864# cmosp w=40u l=2u
++  ad=200p pd=90u as=240p ps=92u
+M1222 VDD a_n1144_448# a_n907_490# w_n913_477# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1223 a_752_90# a_653_100# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1224 a_n212_250# a_n336_187# a_n248_250# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1225 GND a_n1144_209# a_n871_251# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1226 a_1094_934# a_1089_950# VDD w_1141_944# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1227 GND a_n1144_448# a_n871_490# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1228 a_n212_489# a_n336_426# a_n248_489# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1229 a_1444_880# a_1402_828# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1230 a_n212_16# a_n286_0# a_n248_16# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1231 GND a_488_246# a_620_212# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1232 a_822_1207# a_804_950# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1233 a_581_526# P2 GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1234 a_339_362# P0 a_339_354# Gnd cmosn w=25u l=2u
++  ad=150p pd=62u as=150p ps=62u
+M1235 VDD a_827_1155# a_801_1261# w_809_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1236 a_662_986# a_659_934# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1237 VDD P1 a_205_590# w_199_577# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1238 GND a_n575_489# a_n433_507# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1239 G4 a_60_18# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1240 a_864_120# a_752_90# a_864_112# w_858_75# cmosp w=120u l=2u
++  ad=720p pd=252u as=720p ps=252u
+M1241 a_n945_880# a_n1144_901# VDD w_n958_898# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1242 a_n613_426# B2i VDD w_n626_444# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1243 a_n613_187# B3i VDD w_n626_205# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1244 a_735_349# G3 GND Gnd cmosn w=10u l=2u
++  ad=170p pd=94u as=0p ps=0u
+M1245 a_1009_986# a_944_950# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1246 a_n1198_204# a_n1272_188# a_n1234_204# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1247 a_n1198_443# a_n1272_427# a_n1234_443# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1248 a_804_950# a_809_934# a_804_986# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1249 a_n433_957# a_n485_954# a_n485_897# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1250 VDD a_n1323_880# a_n1234_896# w_n1240_883# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1251 VDD Cin a_368_878# w_362_865# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1252 a_58_637# B1 VDD w_52_624# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1253 B3 a_n158_265# VDD w_n148_255# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1254 VDD P0 a_374_702# w_368_689# cmosp w=20u l=2u
++  ad=0p pd=0u as=220p ps=102u
+M1255 a_n248_656# a_n286_640# VDD w_n254_643# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1256 VDD a_949_934# a_944_950# w_931_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1257 a_1009_1207# a_967_1155# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1258 GND a_655_664# a_787_630# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1259 GND a_416_1019# a_548_985# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1260 a_1257_828# CLK VDD w_1271_742# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1261 A4 a_n817_79# VDD w_n807_69# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1262 a_n105_1121# a_n157_1118# Cin Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1263 a_166_132# a_75_98# VDD w_160_119# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1264 a_402_792# a_374_702# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1265 VDD Cin a_389_90# w_382_77# cmosp w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1266 a_n433_203# a_n575_203# a_n485_265# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1267 a_477_90# a_389_90# VDD w_464_110# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1268 P3 a_165_259# VDD w_255_268# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1269 a_n433_442# a_n575_442# a_n485_504# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1270 a_109_463# B2 a_73_463# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1271 a_548_465# G0 VDD w_542_452# cmosp w=20u l=2u
++  ad=220p pd=102u as=0p ps=0u
+M1272 a_735_325# a_392_337# a_735_317# w_729_304# cmosp w=100u l=2u
++  ad=600p pd=212u as=600p ps=212u
+M1273 a_n485_78# a_n575_16# VDD w_n475_3# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1274 a_1299_1171# a_1257_1155# VDD w_1286_1165# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1275 a_847_1133# a_804_950# VDD w_841_1120# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1276 VDD B0i a_n575_939# w_n581_926# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1277 a_164_497# a_73_463# VDD w_158_484# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1278 a_653_100# P4 VDD w_647_87# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1279 a_298_98# a_166_76# P4 Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1280 GND a_448_866# a_486_885# Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=60p ps=32u
+M1281 VDD a_1112_828# a_1086_934# w_1094_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1282 a_n286_0# a_n485_21# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1283 a_291_792# G0 a_324_792# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1284 VDD a_1444_1171# a_1384_1261# w_1431_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1285 a_443_348# P1 VDD w_437_335# cmosp w=20u l=2u
++  ad=240p pd=104u as=0p ps=0u
+M1286 a_1089_950# a_1086_934# VDD w_1076_944# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1287 a_987_806# S2 GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1288 S2o a_949_1261# a_944_1313# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1289 a_1444_1313# Couto GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1290 a_402_792# a_374_702# VDD w_450_707# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1291 B2 a_n158_504# VDD w_n148_494# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1292 a_n433_16# a_n575_16# a_n485_78# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1293 a_n907_204# a_n945_188# VDD w_n913_191# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1294 a_n995_188# a_n1323_188# VDD w_n1008_206# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1295 a_n995_427# a_n1323_427# VDD w_n1008_445# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1296 a_n907_443# a_n945_427# VDD w_n913_430# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1297 a_73_463# B2 VDD w_67_450# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1298 VDD a_1022_209# a_1113_187# w_1107_174# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1299 a_415_795# a_402_792# a_415_787# w_409_774# cmosp w=60u l=2u
++  ad=360p pd=132u as=360p ps=132u
+M1300 a_849_125# a_852_205# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1301 a_n871_204# a_n945_188# a_n907_204# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1302 a_n871_443# a_n945_427# a_n907_443# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1303 a_695_481# a_637_450# a_695_473# w_689_460# cmosp w=80u l=2u
++  ad=480p pd=172u as=480p ps=172u
+M1304 a_705_806# S0 VDD w_699_793# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1305 GND a_n336_640# a_n212_656# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1306 a_1149_243# a_1022_209# a_1113_243# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1307 a_n575_892# a_n613_876# VDD w_n581_879# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1308 a_n539_703# a_n664_640# a_n575_703# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1309 a_296_717# a_164_695# P1 Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1310 a_n484_1061# a_n484_1118# VDD w_n474_1108# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1311 GND a_74_897# a_201_875# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1312 a_548_526# P2 VDD w_542_513# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1313 VDD a_n664_0# a_n575_16# w_n581_3# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1314 VDD C4 a_1022_209# w_1016_196# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1315 a_339_338# P3 GND Gnd cmosn w=25u l=2u
++  ad=150p pd=62u as=0p ps=0u
+M1316 VDD a_1154_1171# a_1094_1261# w_1141_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1317 a_n1234_704# a_n1323_641# VDD w_n1240_691# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1318 a_n1234_943# a_n1323_880# VDD w_n1240_930# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1319 VDD a_n1144_209# a_n1144_266# w_n1134_191# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1320 VDD P0 a_307_338# w_301_325# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1321 a_n336_876# a_n664_876# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1322 a_n945_1# a_n1144_22# VDD w_n958_19# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1323 a_n433_721# a_n485_718# a_n485_661# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1324 a_524_190# C3 a_488_190# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1325 GND a_n1144_209# a_n1092_204# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1326 a_662_1313# a_659_1261# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1327 a_1154_1313# S3o GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1328 GND a_n1234_64# a_n1092_82# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1329 a_1009_844# a_987_806# a_1009_880# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1330 VDD B1 a_n158_718# w_n148_643# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1331 VDD a_488_246# S3 w_578_199# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1332 S4 a_1113_187# VDD w_1203_196# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1333 a_n285_1040# a_n484_1061# VDD w_n298_1058# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1334 GND A0 a_110_897# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1335 a_941_934# a_967_828# a_962_880# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1336 a_705_1133# a_662_950# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1337 GND Cin a_452_1019# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1338 a_291_792# P1 VDD w_285_779# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1339 GND C2 a_691_664# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1340 VDD a_n1144_22# a_n907_64# w_n913_51# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1341 a_1154_844# a_1112_828# VDD w_1141_838# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1342 a_n1323_188# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1343 a_n1272_188# A3i GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1344 GND A3 a_201_315# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1345 a_667_1261# S0o VDD w_714_1271# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1346 a_1231_1261# a_1234_950# VDD w_1239_1165# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1347 a_n286_187# a_n485_208# VDD w_n299_205# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1348 a_1234_950# a_1239_934# a_1234_986# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1349 GND a_n664_876# a_n539_892# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1350 G0 a_59_817# VDD w_126_825# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1351 a_n286_426# a_n485_447# VDD w_n299_444# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1352 a_1444_986# a_1379_950# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1353 a_n945_641# a_n1144_662# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1354 a_557_124# P1 a_557_116# Gnd cmosn w=25u l=2u
++  ad=150p pd=62u as=0p ps=0u
+M1355 a_74_281# B3 VDD w_68_268# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1356 a_n945_880# a_n1144_901# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1357 a_847_806# S1 VDD w_841_793# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1358 a_738_193# P3 a_738_185# Gnd cmosn w=30u l=2u
++  ad=180p pd=72u as=0p ps=0u
+M1359 a_667_934# a_662_950# VDD w_714_944# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1360 S4o a_1231_1261# VDD w_1221_1271# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1361 S1o a_809_1261# a_804_1313# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1362 a_478_449# a_379_459# VDD w_465_469# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1363 GND a_610_99# a_864_128# Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1364 VDD a_n248_63# B4 w_n148_68# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1365 a_59_201# A3 a_92_201# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1366 VDD B1i a_n575_703# w_n581_690# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1367 a_406_702# Cin GND Gnd cmosn w=30u l=2u
++  ad=180p pd=72u as=0p ps=0u
+M1368 VDD a_655_664# S2 w_745_617# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1369 VDD a_416_1019# S0 w_506_972# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1370 GND A2 a_n765_443# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1371 G0 a_59_817# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1372 GND A1i a_n1198_704# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1373 a_411_475# P0 a_411_467# Gnd cmosn w=40u l=2u
++  ad=240p pd=92u as=0p ps=0u
+M1374 a_415_803# a_371_780# GND Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1375 GND a_n664_0# a_n539_16# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1376 VDD a_n485_897# a_n485_954# w_n475_879# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1377 a_600_630# P2 a_564_630# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1378 a_1112_828# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1379 VDD a_n1234_704# a_n1144_662# w_n1134_709# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1380 a_478_449# a_379_459# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1381 VDD a_n1234_943# a_n1144_901# w_n1134_948# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1382 a_n1234_17# a_n1272_1# VDD w_n1240_4# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1383 a_111_98# B4 a_75_98# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1384 VDD A3 a_n817_266# w_n807_191# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1385 a_962_880# S2 GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1386 GND a_n1234_704# a_n1092_722# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1387 a_n1323_641# CLK VDD w_n1336_659# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1388 Cout a_864_128# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1389 GND a_n1234_943# a_n1092_961# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1390 a_n1272_641# A1i VDD w_n1285_659# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1391 GND P1 a_241_590# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1392 a_1107_880# S3 GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1393 a_864_104# a_477_90# a_864_96# w_858_75# cmosp w=120u l=2u
++  ad=720p pd=252u as=720p ps=252u
+M1394 a_200_751# a_73_717# a_164_751# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1395 a_n575_656# a_n613_640# VDD w_n581_643# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1396 a_n575_63# a_n664_0# VDD w_n581_50# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1397 a_1397_1207# a_1379_950# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1398 GND a_678_338# a_735_349# Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1399 a_n1323_427# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1400 a_621_361# P2 a_621_353# Gnd cmosn w=30u l=2u
++  ad=180p pd=72u as=180p ps=72u
+M1401 a_n1272_427# A2i GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1402 VDD a_n336_187# a_n248_203# w_n254_190# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1403 a_428_590# a_296_568# S1 Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1404 VDD a_n336_426# a_n248_442# w_n254_429# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1405 a_n995_1# a_n1323_1# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1406 a_809_1261# a_869_1171# a_869_1313# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1407 a_1239_1261# S4o VDD w_1286_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1408 a_809_934# a_804_950# VDD w_856_944# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1409 a_307_338# P3 VDD w_301_325# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1410 a_n1144_719# a_n1234_657# VDD w_n1134_644# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1411 a_n1092_17# a_n1234_17# a_n1144_79# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1412 a_n1144_958# a_n1234_896# VDD w_n1134_883# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1413 GND a_n248_939# a_n106_957# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1414 GND B2i a_n539_489# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1415 GND B3i a_n539_250# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1416 a_1444_1207# a_1402_1155# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1417 a_n1092_896# a_n1234_896# a_n1144_958# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1418 a_n1092_657# a_n1234_657# a_n1144_719# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1419 a_n871_17# a_n945_1# a_n907_17# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1420 VDD P1 a_389_90# w_382_77# cmosp w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1421 GND a_205_590# a_332_568# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1422 a_685_116# P2 a_685_108# Gnd cmosn w=40u l=2u
++  ad=240p pd=92u as=0p ps=0u
+M1423 a_752_90# a_653_100# VDD w_739_110# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1424 a_1402_1155# a_1402_828# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1425 a_1379_986# a_1376_934# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1426 a_448_866# a_368_878# VDD w_435_886# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1427 GND a_n248_63# a_n106_81# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1428 a_1113_243# a_1022_209# VDD w_1107_230# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1429 VDD A3i a_n1234_251# w_n1240_238# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1430 VDD a_74_897# a_165_875# w_159_862# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1431 VDD A2i a_n1234_490# w_n1240_477# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1432 a_847_1133# a_804_950# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1433 VDD a_n1144_662# a_n907_704# w_n913_691# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1434 P1 a_164_695# VDD w_254_704# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1435 a_548_465# P2 VDD w_542_452# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1436 a_n212_703# a_n336_640# a_n248_703# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1437 a_413_122# P0 a_413_114# Gnd cmosn w=30u l=2u
++  ad=180p pd=72u as=0p ps=0u
+M1438 a_488_190# C3 VDD w_482_177# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1439 GND a_n1144_662# a_n871_704# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1440 VDD a_n575_250# a_n485_208# w_n475_255# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1441 a_735_349# a_722_346# a_735_341# w_729_304# cmosp w=100u l=2u
++  ad=500p pd=210u as=0p ps=0u
+M1442 GND a_n484_1061# a_n211_1103# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1443 a_n1323_880# CLK VDD w_n1336_898# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1444 a_685_1155# a_685_828# VDD w_699_1070# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1445 a_n1272_880# A0i VDD w_n1285_898# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1446 a_n765_269# a_n817_266# A3 Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1447 a_448_866# a_368_878# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1448 VDD a_1154_844# a_1094_934# w_1141_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1449 VDD a_n907_704# A1 w_n807_709# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1450 a_n158_78# a_n248_16# VDD w_n148_3# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1451 VDD P1 a_525_100# w_519_87# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1452 VDD a_n907_943# A0 w_n807_948# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1453 a_n106_892# a_n248_892# a_n158_954# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1454 a_1444_844# a_1422_806# a_1444_880# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1455 a_1154_1207# a_1112_1155# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1456 VDD P3 a_706_185# w_700_172# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1457 VDD A3 a_59_201# w_53_188# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1458 GND a_795_170# a_864_128# Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1459 a_n539_63# a_n664_0# a_n575_63# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1460 a_1112_1155# a_1112_828# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1461 a_548_465# G0 a_580_473# Gnd cmosn w=30u l=2u
++  ad=150p pd=70u as=180p ps=72u
+M1462 a_379_459# P0 VDD w_373_446# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1463 VDD A3 a_165_315# w_159_302# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1464 a_92_817# B0 GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1465 a_949_934# a_1009_844# a_1009_986# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1466 a_659_934# S0 VDD w_667_838# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1467 a_1277_806# S4 VDD w_1271_793# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1468 a_n335_1040# a_n663_1040# VDD w_n348_1058# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1469 a_n211_1056# a_n285_1040# a_n247_1056# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1470 GND a_165_315# a_297_281# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1471 VDD G2 a_725_405# w_719_392# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1472 a_1239_1261# a_1299_1171# a_1299_1313# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1473 VDD a_827_828# a_801_934# w_809_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1474 GND a_n574_1103# a_n432_1121# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1475 C2 a_415_803# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1476 a_58_637# A1 a_91_637# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1477 VDD a_1299_844# a_1239_934# w_1286_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1478 GND a_n336_876# a_n212_892# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1479 a_610_99# a_525_100# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1480 a_n817_958# a_n907_896# VDD w_n807_883# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1481 a_n817_719# a_n907_657# VDD w_n807_644# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1482 a_n248_250# a_n336_187# VDD w_n254_237# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1483 VDD a_n247_1103# Cin w_n147_1108# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1484 a_n539_939# a_n664_876# a_n575_939# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1485 a_727_844# a_685_828# VDD w_714_838# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1486 a_n248_489# a_n336_426# VDD w_n254_476# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1487 a_695_497# a_478_449# GND Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1488 VDD P2 a_589_353# w_583_340# cmosp w=20u l=2u
++  ad=0p pd=0u as=220p ps=102u
+M1489 a_804_950# a_801_934# VDD w_791_944# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1490 a_564_630# P2 VDD w_558_617# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1491 a_109_717# B1 a_73_717# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1492 a_1245_209# a_1113_187# S4 Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1493 VDD a_1402_1155# a_1376_1261# w_1384_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1494 a_325_985# P0 VDD w_319_972# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1495 a_1277_1133# a_1234_950# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1496 VDD Cini a_n574_1103# w_n580_1090# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1497 VDD a_n575_489# a_n485_447# w_n475_494# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1498 GND a_n1323_1# a_n1198_17# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1499 a_416_1019# a_325_985# VDD w_410_1006# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1500 a_n765_508# a_n817_505# A2 Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1501 a_n664_426# CLK VDD w_n677_444# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1502 a_n664_187# CLK VDD w_n677_205# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1503 GND a_n248_703# a_n106_721# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1504 a_n539_203# a_n613_187# a_n575_203# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1505 a_n539_442# a_n613_426# a_n575_442# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1506 a_949_1261# a_1009_1171# a_1009_1313# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1507 VDD B0 a_n158_954# w_n148_879# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1508 a_164_751# a_73_717# VDD w_158_738# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1509 a_1257_1155# a_1257_828# VDD w_1271_1070# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1510 a_n432_1056# a_n574_1056# a_n484_1118# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1511 a_n485_897# a_n485_954# VDD w_n475_944# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1512 a_n1234_204# a_n1272_188# VDD w_n1240_191# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1513 a_n1234_443# a_n1272_427# VDD w_n1240_430# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1514 a_n106_16# a_n248_16# a_n158_78# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1515 a_392_337# a_307_338# VDD w_379_357# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1516 a_58_383# A2 a_91_383# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1517 a_n285_1040# a_n484_1061# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1518 a_n157_1118# a_n247_1056# VDD w_n147_1043# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1519 a_477_90# a_389_90# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1520 VDD a_1094_934# a_1089_950# w_1076_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1521 a_685_828# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1522 a_653_100# P2 VDD w_647_87# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1523 a_443_348# G0 a_475_364# Gnd cmosn w=40u l=2u
++  ad=200p pd=90u as=0p ps=0u
+M1524 a_1239_934# a_1234_950# VDD w_1286_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1525 a_73_717# B1 VDD w_67_704# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1526 C3 a_695_497# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1527 a_801_934# S1 VDD w_809_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1528 a_655_608# P2 VDD w_649_595# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1529 a_n945_1# a_n1144_22# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1530 a_885_205# P4 GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1531 VDD a_1112_1155# a_1086_1261# w_1094_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1532 a_n574_1056# a_n612_1040# VDD w_n580_1043# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1533 a_987_1133# a_944_950# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1534 a_416_963# P0 VDD w_410_950# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1535 a_n485_265# a_n575_203# VDD w_n475_190# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1536 a_n485_504# a_n575_442# VDD w_n475_429# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1537 VDD a_n336_0# a_n248_16# w_n254_3# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1538 Couto a_1384_1261# a_1379_1313# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1539 a_392_337# a_307_338# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1540 a_n106_656# a_n248_656# a_n158_718# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1541 VDD a_205_590# a_296_568# w_290_555# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1542 a_869_1171# a_847_1133# a_869_1207# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1543 a_869_844# a_827_828# VDD w_856_838# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1544 GND A1 a_n765_657# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1545 a_678_338# a_589_353# VDD w_665_358# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1546 a_1422_1133# a_1379_950# VDD w_1416_1120# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1547 a_864_88# G4 VDD w_858_75# cmosp w=120u l=2u
++  ad=720p pd=252u as=0p ps=0u
+M1548 GND a_n485_208# a_n212_250# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1549 GND a_n485_447# a_n212_489# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1550 GND a_n336_0# a_n212_16# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1551 a_59_817# B0 VDD w_53_804# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1552 GND A2 a_200_497# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1553 a_413_90# P4 GND Gnd cmosn w=30u l=2u
++  ad=180p pd=72u as=0p ps=0u
+M1554 a_332_624# a_205_590# a_296_624# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1555 a_548_526# G1 a_581_526# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1556 VDD a_n664_187# a_n575_203# w_n581_190# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1557 VDD a_n664_426# a_n575_442# w_n581_429# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1558 a_864_128# a_849_125# a_864_120# w_858_75# cmosp w=120u l=2u
++  ad=600p pd=250u as=0p ps=0u
+M1559 GND a_392_337# a_735_349# Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1560 a_678_338# a_589_353# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1561 a_1402_828# CLK VDD w_1416_742# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1562 a_n1323_641# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1563 GND a_n1323_188# a_n1198_204# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1564 S3o a_1094_1261# a_1089_1313# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1565 a_n1323_880# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1566 a_n1272_880# A0i GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1567 a_n1272_641# A1i GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1568 VDD A1 a_58_637# w_52_624# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1569 VDD a_n248_250# B3 w_n148_255# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1570 GND a_n575_939# a_n433_957# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1571 a_297_897# a_165_875# P0 Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1572 a_374_702# P1 VDD w_368_689# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1573 VDD a_n336_640# a_n248_656# w_n254_643# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1574 a_1231_1261# a_1257_1155# a_1252_1207# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1575 VDD a_685_1155# a_659_1261# w_667_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1576 VDD a_1132_806# a_1154_844# w_1141_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1577 a_n1198_64# a_n1323_1# a_n1234_64# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1578 a_1132_1133# a_1089_950# VDD w_1126_1120# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1579 VDD a_n1144_448# a_n1144_505# w_n1134_430# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1580 a_869_1171# a_827_1155# VDD w_856_1165# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1581 a_1384_934# a_1444_844# a_1444_986# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1582 a_941_1261# a_944_950# VDD w_949_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1583 VDD a_1257_828# a_1231_934# w_1239_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1584 GND a_n1144_448# a_n1092_443# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1585 VDD a_667_1261# S0o w_649_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1586 GND a_n247_1103# a_n105_1121# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1587 VDD a_727_844# a_667_934# w_714_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1588 Cout a_864_128# VDD w_1028_108# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1589 VDD a_n1234_64# a_n1144_22# w_n1134_69# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1590 a_n612_1040# Cini VDD w_n625_1058# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1591 GND A0 a_n765_896# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1592 a_n485_661# a_n485_718# VDD w_n475_708# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1593 a_849_125# a_852_205# VDD w_919_213# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1594 a_371_780# a_291_792# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1595 VDD a_165_315# P3 w_255_268# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1596 S2o a_941_1261# VDD w_931_1271# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1597 a_1132_806# S3 GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1598 a_1299_1171# a_1277_1133# a_1299_1207# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1599 VDD a_705_1133# a_727_1171# w_714_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1600 a_735_333# a_542_338# a_735_325# w_729_304# cmosp w=100u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1601 GND Cini a_n538_1103# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1602 a_1234_950# a_1231_934# VDD w_1221_944# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1603 a_n433_892# a_n575_892# a_n485_954# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1604 VDD A2 a_58_383# w_52_370# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1605 VDD a_n485_21# a_n485_78# w_n475_3# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1606 a_110_281# B3 a_74_281# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1607 VDD a_1277_806# a_1299_844# w_1286_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1608 a_n248_63# a_n336_0# VDD w_n254_50# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1609 VDD a_n484_1061# a_n247_1103# w_n253_1090# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1610 a_n212_939# a_n336_876# a_n248_939# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1611 a_475_348# P3 GND Gnd cmosn w=40u l=2u
++  ad=240p pd=92u as=0p ps=0u
+M1612 a_944_986# a_941_934# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1613 a_n613_187# B3i GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1614 VDD G0 a_443_348# w_437_335# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1615 a_580_465# P2 GND Gnd cmosn w=30u l=2u
++  ad=180p pd=72u as=0p ps=0u
+M1616 a_n105_1056# a_n247_1056# a_n157_1118# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1617 a_1086_934# a_1112_828# a_1107_880# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1618 VDD a_n248_489# B2 w_n148_494# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1619 a_n336_426# a_n664_426# VDD w_n349_444# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1620 GND a_n485_21# a_n433_16# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1621 GND a_n907_64# a_n765_82# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1622 a_n336_187# a_n664_187# VDD w_n349_205# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1623 a_n613_876# B0i VDD w_n626_894# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1624 VDD a_n995_188# a_n907_204# w_n913_191# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1625 a_722_346# a_725_405# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1626 a_401_878# P0 GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1627 a_n538_1056# a_n612_1040# a_n574_1056# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1628 a_n212_63# a_n336_0# a_n248_63# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1629 a_n212_203# a_n286_187# a_n248_203# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1630 GND a_n995_188# a_n871_204# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1631 a_n212_442# a_n286_426# a_n248_442# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1632 a_1009_1171# a_987_1133# a_1009_1207# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1633 GND A0i a_n1198_943# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1634 a_695_489# a_478_449# a_695_481# w_689_460# cmosp w=80u l=2u
++  ad=480p pd=172u as=0p ps=0u
+M1635 B0 a_n158_954# VDD w_n148_944# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1636 a_n575_250# a_n664_187# VDD w_n581_237# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1637 a_1231_934# S4 VDD w_1239_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1638 a_n575_489# a_n664_426# VDD w_n581_476# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1639 a_201_259# B3 a_165_259# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1640 a_n247_1056# a_n285_1040# VDD w_n253_1043# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1641 VDD a_869_844# a_809_934# w_856_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1642 a_557_100# P4 GND Gnd cmosn w=25u l=2u
++  ad=150p pd=62u as=0p ps=0u
+M1643 VDD a_n574_1103# a_n484_1061# w_n474_1108# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1644 GND a_164_751# a_296_717# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1645 a_339_346# P2 a_339_338# Gnd cmosn w=25u l=2u
++  ad=150p pd=62u as=0p ps=0u
+M1646 VDD A1i a_n1234_704# w_n1240_691# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1647 VDD G1 a_548_526# w_542_513# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1648 VDD A2 a_n817_505# w_n807_430# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1649 a_n335_1040# a_n663_1040# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1650 a_1299_844# a_1257_828# VDD w_1286_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1651 a_695_497# G2 GND Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1652 a_n1323_1# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1653 a_801_1261# a_804_950# VDD w_809_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1654 a_361_985# P0 a_325_985# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1655 GND a_397_212# a_524_190# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1656 a_n1144_209# a_n1144_266# VDD w_n1134_256# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1657 a_1379_950# a_1384_934# a_1379_986# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1658 GND a_n575_703# a_n433_721# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1659 GND a_166_132# a_298_98# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1660 a_n158_265# a_n248_203# VDD w_n148_190# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1661 a_n613_640# B1i VDD w_n626_658# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1662 a_n1092_269# a_n1144_266# a_n1144_209# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1663 a_n158_504# a_n248_442# VDD w_n148_429# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1664 VDD a_667_934# a_662_950# w_649_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1665 a_n1198_657# a_n1272_641# a_n1234_657# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1666 a_n1198_896# a_n1272_880# a_n1234_896# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1667 S1o a_801_1261# VDD w_791_1271# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1668 VDD A2 a_164_497# w_158_484# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1669 VDD a_1113_243# S4 w_1203_196# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1670 a_n765_722# a_n817_719# A1 Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1671 a_296_624# a_205_590# VDD w_290_611# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1672 a_n613_426# B2i GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1673 GND P3 a_433_212# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1674 a_1009_1171# a_967_1155# VDD w_996_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1675 a_n484_1118# a_n574_1056# VDD w_n474_1043# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1676 GND a_164_497# a_296_463# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1677 a_n1144_79# a_n1234_17# VDD w_n1134_4# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1678 a_1384_1261# a_1444_1171# a_1444_1313# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1679 a_n995_188# a_n1323_188# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1680 a_n907_17# a_n945_1# VDD w_n913_4# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1681 a_415_803# a_371_780# a_415_795# w_409_774# cmosp w=60u l=2u
++  ad=300p pd=130u as=0p ps=0u
+M1682 a_525_100# G0 a_557_124# Gnd cmosn w=25u l=2u
++  ad=125p pd=60u as=0p ps=0u
+M1683 VDD A3 a_74_281# w_68_268# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1684 a_1154_880# a_1112_828# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1685 a_691_608# P2 a_655_608# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1686 a_452_963# P0 a_416_963# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1687 a_n433_656# a_n575_656# a_n485_718# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1688 P4 a_166_76# VDD w_256_85# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1689 P0 a_165_875# VDD w_255_884# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1690 VDD a_685_828# a_659_934# w_667_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1691 VDD a_n1144_901# a_n907_943# w_n913_930# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1692 a_1257_828# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1693 GND B3 a_n106_203# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1694 GND a_n1144_901# a_n871_943# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1695 GND B2 a_n106_442# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1696 a_379_459# Cin a_411_475# Gnd cmosn w=40u l=2u
++  ad=200p pd=90u as=0p ps=0u
+M1697 a_n248_703# a_n336_640# VDD w_n254_690# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1698 a_201_931# a_74_897# a_165_931# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1699 a_n1144_448# a_n1144_505# VDD w_n1134_495# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1700 a_443_348# P3 VDD w_437_335# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1701 a_1094_1261# a_1154_1171# a_1154_1313# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1702 a_662_950# a_659_934# VDD w_649_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1703 GND C2 a_600_630# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1704 a_n765_17# a_n907_17# a_n817_79# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1705 a_620_212# a_488_190# S3 Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1706 a_809_1261# S1o VDD w_856_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1707 VDD a_705_806# a_727_844# w_714_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1708 C2 a_415_803# VDD w_511_793# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1709 a_n1092_508# a_n1144_505# a_n1144_448# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1710 VDD a_n1323_1# a_n1234_17# w_n1240_4# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1711 a_949_934# a_944_950# VDD w_996_944# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1712 B1 a_n158_718# VDD w_n148_708# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1713 A3 a_n817_266# VDD w_n807_256# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1714 VDD a_809_934# a_804_950# w_791_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1715 a_n995_641# a_n1323_641# VDD w_n1008_659# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1716 a_n907_657# a_n945_641# VDD w_n913_644# cmosp w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1717 a_864_112# a_610_99# a_864_104# w_858_75# cmosp w=120u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1718 a_n907_896# a_n945_880# VDD w_n913_883# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1719 GND A1 a_200_751# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1720 VDD a_n664_640# a_n575_656# w_n581_643# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1721 a_n871_896# a_n945_880# a_n907_896# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1722 a_n871_657# a_n945_641# a_n907_657# Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=100p ps=50u
+M1723 a_735_349# a_722_346# GND Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1724 a_374_702# Cin VDD w_368_689# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1725 a_589_353# G1 a_621_361# Gnd cmosn w=30u l=2u
++  ad=150p pd=70u as=0p ps=0u
+M1726 VDD a_727_1171# a_667_1261# w_714_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1727 a_n995_427# a_n1323_427# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1728 a_n286_187# a_n485_208# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1729 a_705_806# S0 GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1730 GND a_296_624# a_428_590# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1731 GND A4 a_202_132# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1732 a_525_100# P4 VDD w_519_87# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1733 VDD P2 a_307_338# w_301_325# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1734 a_727_1313# S0o GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1735 a_415_803# G1 GND Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1736 VDD a_1239_1261# S4o w_1221_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1737 a_967_1155# a_967_828# VDD w_981_1070# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1738 a_n286_876# a_n485_897# VDD w_n299_894# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1739 GND a_n1144_22# a_n1092_17# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1740 VDD a_n336_876# a_n248_892# w_n254_879# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1741 a_967_828# CLK VDD w_981_742# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1742 VDD a_n1144_662# a_n1144_719# w_n1134_644# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1743 GND a_n1144_662# a_n1092_657# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1744 GND a_n995_1# a_n871_17# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1745 a_165_259# B3 VDD w_159_246# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1746 a_1234_1313# a_1231_1261# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1747 a_389_90# P0 VDD w_382_77# cmosp w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1748 a_200_695# B1 a_164_695# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1749 a_653_100# G1 a_685_116# Gnd cmosn w=40u l=2u
++  ad=200p pd=90u as=0p ps=0u
+M1750 C3 a_695_497# VDD w_812_481# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1751 VDD a_164_751# P1 w_254_704# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1752 VDD P1 a_548_465# w_542_452# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1753 a_60_18# B4 VDD w_54_5# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1754 VDD a_397_212# a_488_190# w_482_177# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1755 VDD a_847_806# a_869_844# w_856_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1756 a_n612_1040# Cini GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1757 a_557_108# P3 a_557_100# Gnd cmosn w=25u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1758 a_n106_268# a_n158_265# B3 Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1759 GND a_n907_251# a_n765_269# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1760 a_n995_880# a_n1323_880# VDD w_n1008_898# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1761 a_324_792# P1 GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1762 a_n286_640# a_n485_661# VDD w_n299_658# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1763 A2 a_n817_505# VDD w_n807_495# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1764 VDD a_166_132# P4 w_256_85# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1765 VDD B4 a_n158_78# w_n148_3# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1766 a_525_100# G0 VDD w_519_87# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1767 a_1422_806# Cout VDD w_1416_793# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1768 a_202_76# B4 a_166_76# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1769 a_74_897# B0 VDD w_68_884# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1770 VDD P3 a_397_212# w_391_199# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1771 a_524_246# a_397_212# a_488_246# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1772 VDD Cin a_379_459# w_373_446# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1773 a_n286_426# a_n485_447# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1774 a_59_817# A0 a_92_817# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1775 a_n1234_64# a_n1323_1# VDD w_n1240_51# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1776 a_695_473# G2 VDD w_689_460# cmosp w=80u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1777 a_411_459# P2 GND Gnd cmosn w=40u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1778 a_1107_1207# a_1089_950# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1779 VDD a_164_497# P2 w_254_450# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1780 a_795_170# a_706_185# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1781 S1 a_296_568# VDD w_386_577# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1782 GND a_n335_1040# a_n211_1056# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1783 VDD a_n1144_901# a_n1144_958# w_n1134_883# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1784 a_680_880# S0 GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1785 a_1299_1313# S4o GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1786 a_1444_1171# a_1422_1133# a_1444_1207# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1787 GND a_n1144_901# a_n1092_896# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1788 a_949_1261# S2o VDD w_996_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1789 a_941_1261# a_967_1155# a_962_1207# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1790 a_827_1155# a_827_828# VDD w_841_1070# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1791 VDD A1 a_n817_719# w_n807_644# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1792 VDD a_n485_208# a_n248_250# w_n254_237# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1793 GND B0i a_n539_939# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1794 a_801_934# a_827_828# a_822_880# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1795 VDD a_n485_447# a_n248_489# w_n254_476# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1796 a_307_338# Cin a_339_362# Gnd cmosn w=25u l=2u
++  ad=125p pd=60u as=0p ps=0u
+M1797 GND a_628_514# a_695_497# Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1798 a_1154_986# a_1089_950# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1799 a_165_931# a_74_897# VDD w_159_918# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1800 a_589_353# G1 VDD w_583_340# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1801 VDD C2 a_564_630# w_558_617# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1802 a_n1092_82# a_n1144_79# a_n1144_22# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1803 GND a_1113_243# a_1245_209# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1804 a_1376_1261# a_1379_950# VDD w_1384_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1805 VDD Cin a_325_985# w_319_972# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1806 a_727_880# a_685_828# GND Gnd cmosn w=20u l=2u
++  ad=120p pd=52u as=0p ps=0u
+M1807 GND A1 a_109_717# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1808 GND a_n1323_427# a_n1198_443# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1809 S3 a_488_190# VDD w_578_199# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1810 C1 a_486_885# VDD w_563_886# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1811 VDD Cin a_416_1019# w_410_1006# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1812 a_n106_507# a_n158_504# B2 Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1813 a_n871_64# a_n995_1# a_n907_64# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1814 GND a_n907_490# a_n765_508# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1815 a_n945_427# a_n1144_448# VDD w_n958_445# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1816 a_389_90# P4 VDD w_382_77# cmosp w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1817 a_n945_188# a_n1144_209# VDD w_n958_206# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1818 VDD a_1239_934# a_1234_950# w_1221_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1819 a_628_514# a_548_526# VDD w_615_534# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1820 a_1384_934# a_1379_950# VDD w_1431_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1821 VDD A1 a_164_751# w_158_738# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1822 a_n613_640# B1i GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1823 Couto a_1376_1261# VDD w_1366_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1824 a_1154_1171# a_1132_1133# a_1154_1207# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1825 GND a_n484_1061# a_n432_1056# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1826 VDD a_n575_939# a_n485_897# w_n475_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1827 a_637_450# a_548_465# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1828 VDD a_n1323_188# a_n1234_204# w_n1240_191# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1829 a_1009_844# a_967_828# VDD w_996_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1830 GND B4 a_n106_16# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1831 VDD a_n907_64# A4 w_n807_69# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1832 a_200_441# B2 a_164_441# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1833 a_n539_892# a_n613_876# a_n575_892# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1834 a_680_1207# a_662_950# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1835 a_944_950# a_949_934# a_944_986# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1836 a_1444_1171# a_1402_1155# VDD w_1431_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1837 VDD Cin a_n157_1118# w_n147_1043# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1838 C1 a_486_885# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1839 VDD A4 a_166_132# w_160_119# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1840 a_n1272_1# A4i GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1841 VDD G1 a_653_100# w_647_87# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1842 a_827_828# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1843 VDD A1 a_73_717# w_67_704# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1844 GND a_n485_208# a_n433_203# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1845 a_758_405# P3 GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1846 GND a_n485_447# a_n433_442# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1847 VDD a_564_630# a_655_608# w_649_595# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1848 a_628_514# a_548_526# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1849 VDD a_n663_1040# a_n574_1056# w_n580_1043# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1850 a_n575_703# a_n664_640# VDD w_n581_690# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1851 a_413_106# P2 a_413_98# Gnd cmosn w=30u l=2u
++  ad=0p pd=0u as=180p ps=72u
+M1852 a_852_205# G3 a_885_205# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1853 GND A2 a_109_463# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1854 a_93_18# B4 GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1855 a_n765_204# a_n907_204# a_n817_266# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1856 a_n765_443# a_n907_443# a_n817_505# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1857 a_822_880# S1 GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1858 GND B1 a_n106_656# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1859 VDD A4 a_75_98# w_69_85# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1860 VDD A0 a_n817_958# w_n807_883# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1861 a_164_695# B1 VDD w_158_682# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1862 S3o a_1086_1261# VDD w_1076_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1863 a_727_1207# a_685_1155# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1864 a_n485_954# a_n575_892# VDD w_n475_879# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1865 VDD P3 a_525_100# w_519_87# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1866 a_685_1155# a_685_828# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1867 a_n1144_662# a_n1144_719# VDD w_n1134_709# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1868 a_864_96# a_795_170# a_864_88# w_858_75# cmosp w=120u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1869 a_869_880# a_827_828# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1870 a_n664_0# CLK VDD w_n677_18# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1871 a_n248_939# a_n336_876# VDD w_n254_926# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1872 a_n1092_722# a_n1144_719# a_n1144_662# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1873 a_801_1261# a_827_1155# a_822_1207# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1874 a_1154_1171# a_1112_1155# VDD w_1141_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1875 VDD A0 a_59_817# w_53_804# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1876 a_413_98# P3 a_413_90# Gnd cmosn w=30u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1877 a_379_459# P2 VDD w_373_446# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1878 GND P1 a_332_624# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1879 a_n664_187# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1880 VDD a_n995_427# a_n907_443# w_n913_430# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1881 VDD A2 a_73_463# w_67_450# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1882 a_371_780# a_291_792# VDD w_358_800# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1883 a_1089_986# a_1086_934# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1884 a_735_349# a_542_338# GND Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1885 GND a_n995_427# a_n871_443# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1886 a_621_353# P3 GND Gnd cmosn w=30u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1887 a_n664_876# CLK VDD w_n677_894# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1888 GND C4 a_1149_243# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1889 a_n248_203# a_n286_187# VDD w_n254_190# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1890 a_488_246# a_397_212# VDD w_482_233# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1891 a_n248_442# a_n286_426# VDD w_n254_429# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1892 VDD a_n664_876# a_n575_892# w_n581_879# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1893 VDD a_1402_828# a_1376_934# w_1384_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=120p ps=52u
+M1894 GND B1i a_n539_703# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1895 a_n995_641# a_n1323_641# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1896 a_852_205# P4 VDD w_846_192# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1897 a_n995_880# a_n1323_880# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1898 a_n336_0# a_n664_0# VDD w_n349_18# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1899 a_n1198_251# a_n1323_188# a_n1234_251# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1900 a_n1198_490# a_n1323_427# a_n1234_490# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1901 a_1379_950# a_1376_934# VDD w_1366_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1902 GND A4i a_n1198_64# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1903 VDD A0i a_n1234_943# w_n1240_930# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1904 a_1277_806# S4 GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1905 a_307_338# Cin VDD w_301_325# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1906 G2 a_58_383# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1907 a_1154_844# a_1132_806# a_1154_880# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1908 a_722_346# a_725_405# VDD w_792_413# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1909 G4 a_60_18# VDD w_127_26# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1910 VDD a_n575_703# a_n485_661# w_n475_708# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1911 a_1231_934# a_1257_828# a_1252_880# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1912 a_n286_0# a_n485_21# VDD w_n299_18# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1913 a_n765_961# a_n817_958# A0 Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1914 a_n664_640# CLK VDD w_n677_658# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1915 a_1149_187# P4 a_1113_187# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1916 a_n433_268# a_n485_265# a_n485_208# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1917 VDD G0 a_291_792# w_285_779# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1918 a_n539_656# a_n613_640# a_n575_656# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1919 a_n817_79# a_n907_17# VDD w_n807_4# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1920 a_1299_1207# a_1257_1155# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1921 a_655_664# a_564_630# VDD w_649_651# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1922 a_n211_1103# a_n335_1040# a_n247_1103# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1923 GND A3 a_110_281# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1924 a_n1234_657# a_n1272_641# VDD w_n1240_644# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1925 a_n1234_896# a_n1272_880# VDD w_n1240_883# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1926 a_1376_934# Cout VDD w_1384_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1927 a_n485_21# a_n485_78# VDD w_n475_68# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1928 a_n664_426# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1929 A1 a_n817_719# VDD w_n807_709# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1930 GND a_n485_897# a_n212_939# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1931 a_475_356# P2 a_475_348# Gnd cmosn w=40u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1932 VDD a_1009_844# a_949_934# w_996_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1933 a_75_98# B4 VDD w_69_85# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1934 a_706_185# G2 a_738_193# Gnd cmosn w=30u l=2u
++  ad=150p pd=70u as=0p ps=0u
+M1935 a_1299_844# a_1277_806# a_1299_880# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=120p ps=52u
+M1936 a_580_473# P1 a_580_465# Gnd cmosn w=30u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1937 a_1058_209# P4 a_1022_209# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1938 a_166_76# B4 VDD w_160_63# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1939 GND Cin a_n105_1056# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1940 a_864_128# a_752_90# GND Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1941 a_n485_718# a_n575_656# VDD w_n475_643# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1942 a_164_441# B2 VDD w_158_428# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1943 GND a_165_931# a_297_897# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1944 a_406_710# P0 a_406_702# Gnd cmosn w=30u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1945 a_n286_640# a_n485_661# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1946 a_727_986# a_662_950# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1947 a_368_878# Cin a_401_878# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1948 a_n433_81# a_n485_78# a_n485_21# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1949 GND a_n663_1040# a_n538_1056# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1950 a_1444_844# a_1402_828# VDD w_1431_838# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1951 a_987_806# S2 VDD w_981_793# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1952 a_695_497# a_628_514# a_695_489# w_689_460# cmosp w=80u l=2u
++  ad=400p pd=170u as=0p ps=0u
+M1953 VDD a_n248_939# B0 w_n148_944# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1954 a_n907_251# a_n995_188# VDD w_n913_238# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1955 VDD B3i a_n575_250# w_n581_237# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1956 VDD a_847_1133# a_869_1171# w_856_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1957 a_486_877# G0 VDD w_480_864# cmosp w=40u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1958 VDD B2i a_n575_489# w_n581_476# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1959 a_n907_490# a_n995_427# VDD w_n913_477# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1960 a_827_1155# a_827_828# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1961 GND a_74_281# a_201_259# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1962 a_n871_251# a_n995_188# a_n907_251# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1963 VDD a_n335_1040# a_n247_1056# w_n253_1043# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1964 a_n212_892# a_n286_876# a_n248_892# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1965 a_n871_490# a_n995_427# a_n907_490# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1966 G3 a_59_201# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1967 a_1422_1133# a_1379_950# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1968 a_1252_880# S4 GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1969 a_339_354# P1 a_339_346# Gnd cmosn w=25u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1970 a_589_353# P3 VDD w_583_340# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1971 S0o a_667_1261# a_662_1313# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1972 VDD a_949_1261# S2o w_931_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1973 a_205_590# C1 VDD w_199_577# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1974 a_n433_507# a_n485_504# a_n485_447# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1975 a_1384_1261# Couto VDD w_1431_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1976 VDD B4i a_n575_63# w_n581_50# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1977 VDD a_n1234_251# a_n1144_209# w_n1134_256# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1978 GND Cin a_361_985# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1979 a_n613_0# B4i VDD w_n626_18# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1980 a_n574_1103# a_n663_1040# VDD w_n580_1090# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1981 a_1299_880# a_1257_828# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1982 GND a_n1234_251# a_n1092_269# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1983 a_944_1313# a_941_1261# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1984 a_368_878# P0 VDD w_362_865# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1985 GND a_n1323_641# a_n1198_657# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1986 a_705_1133# a_662_950# VDD w_699_1120# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1987 C4 a_735_349# VDD w_870_337# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1988 a_1402_828# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1989 VDD P1 a_296_624# w_290_611# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1990 a_n158_954# a_n248_892# VDD w_n148_879# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1991 a_787_630# a_655_608# S2 Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1992 a_1252_1207# a_1234_950# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1993 a_548_985# a_416_963# S0 Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M1994 a_91_383# B2 GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1995 VDD a_1257_1155# a_1231_1261# w_1239_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1996 G3 a_59_201# VDD w_126_209# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M1997 a_1132_1133# a_1089_950# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1998 VDD a_n484_1061# a_n484_1118# w_n474_1043# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1999 VDD a_n1144_22# a_n1144_79# w_n1134_4# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2000 a_n336_187# a_n664_187# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M2001 a_869_986# a_804_950# GND Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2002 a_n613_876# B0i GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M2003 VDD a_n995_1# a_n907_17# w_n913_4# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2004 S0o a_659_1261# VDD w_649_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2005 a_1094_1261# S3o VDD w_1141_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2006 GND a_564_630# a_691_608# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2007 C4 a_735_349# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M2008 GND a_n485_661# a_n433_656# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2009 VDD C4 a_1113_243# w_1107_230# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2010 a_n336_876# a_n664_876# VDD w_n349_894# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M2011 a_735_317# G3 VDD w_729_304# cmosp w=100u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2012 a_389_90# Cin a_413_122# Gnd cmosn w=30u l=2u
++  ad=150p pd=70u as=0p ps=0u
+M2013 VDD a_1277_1133# a_1299_1171# w_1286_1165# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2014 GND a_n485_661# a_n212_703# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2015 a_1257_1155# a_1257_828# GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M2016 a_1112_828# CLK VDD w_1126_742# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M2017 a_n664_0# CLK GND Gnd cmosn w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M2018 a_n575_939# a_n664_876# VDD w_n581_926# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2019 a_659_934# a_685_828# a_680_880# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M2020 a_110_897# B0 a_74_897# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M2021 a_486_885# G0 GND Gnd cmosn w=10u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2022 GND A0 a_201_931# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2023 a_795_170# a_706_185# VDD w_782_190# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M2024 VDD P2 a_443_348# w_437_335# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2025 GND B0 a_n106_892# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2026 VDD a_n1234_490# a_n1144_448# w_n1134_495# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2027 GND A4 a_n765_17# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2028 a_n1323_427# CLK VDD w_n1336_445# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M2029 a_706_185# G2 VDD w_700_172# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2030 a_n1323_188# CLK VDD w_n1336_206# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M2031 GND a_n1234_490# a_n1092_508# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2032 a_n1272_188# A3i VDD w_n1285_206# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M2033 GND a_n1323_880# a_n1198_896# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2034 a_n1272_427# A2i VDD w_n1285_445# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M2035 GND B4i a_n539_63# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2036 a_1113_187# P4 VDD w_1107_174# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2037 VDD a_809_1261# S1o w_791_1271# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2038 a_1094_934# a_1154_844# a_1154_986# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M2039 VDD a_n248_703# B1 w_n148_708# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2040 a_n336_640# a_n664_640# VDD w_n349_658# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M2041 a_n575_203# a_n613_187# VDD w_n581_190# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2042 a_415_787# G1 VDD w_409_774# cmosp w=60u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2043 VDD a_n907_251# A3 w_n807_256# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2044 a_n575_442# a_n613_426# VDD w_n581_429# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2045 VDD a_n995_641# a_n907_657# w_n913_644# cmosp w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M2046 a_1277_1133# a_1234_950# VDD w_1271_1120# cmosp w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M2047 a_727_844# a_705_806# a_727_880# Gnd cmosn w=20u l=2u
++  ad=100p pd=50u as=0p ps=0u
+M2048 a_n212_656# a_n286_640# a_n248_656# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=100p ps=50u
+M2049 GND a_n995_641# a_n871_657# Gnd cmosn w=20u l=2u
++  ad=0p pd=0u as=0p ps=0u
+.end

@@ -1,0 +1,44 @@
+.include "TSMC_180nm.txt"
+.include "final_circuit_post1.cir"
+
+.include "TSMC_180nm.txt"
+.include "adder_post1.cir"
+
+*Va0 a0 0 pulse(0 1.8 5ns 100ps 100ps 10ns 20ns)
+Va0 a0 0 dc 0
+Va1 a1 0 dc 1.8
+Va2 a2 0 dc 0
+Va3 a3 0 dc 0
+Va4 a4 0 dc 0
+
+*Input B bits
+Vb0 b0 0 dc 1.8
+Vb1 b1 0 dc 1.8
+Vb2 b2 0 dc 1.8
+Vb3 b3 0 dc 0
+Vb4 b4 0 dc 0
+
+Vclk clk 0 pulse(0 1.8 20ns 100ps 100ps 500ns 1000ns)
+
+
+.tran 100ps 50ns
+
+.control
+run
+set hcopypscolor=1
+set color0=white
+set color1=black
+
+* 1. Plot Clock
+plot v(clk) title "Clock"
+
+* 2. Plot Inputs (Offset for visibility)
+plot v(a0) v(a1)+2 v(a2)+4 v(a3)+6 v(a4)+8 title "Input A [0..4]"
+plot v(b0) v(b1)+2 v(b2)+4 v(b3)+6 v(b4)+8 title "Input B [0..4]"
+
+* 3. Plot Latched Outputs (S_q) and Unlatched Carry (Cout)
+* Note: S_q signals update on the rising clock edge (5ns, 15ns...)
+plot v(S0_q) v(S1_q)+2 v(S2_q)+4 v(S3_q)+6 v(S4_q)+8 v(Cout)+10 title "Sum Outputs & Cout"
+
+.endc
+.end

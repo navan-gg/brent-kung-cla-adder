@@ -1,0 +1,93 @@
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.param LAMBDA=0.09u
+.param width_N={10*LAMBDA}
+.param width_P={2*width_N}
+.global gnd vdd
+.option scale=0.09u
+Vdd	vdd	gnd	'SUPPLY'
+*for manually calculating the setup and hold times.
+.param tD = 197700p 
+
+Vclk clk gnd PULSE(0 'SUPPLY' 10n 100p 100p 10n 20n)
+Vin d gnd pulse(0 1.8 20n 100p 100p 30n 60n)
+
+M1000 d_out a_505_n102# vdd vdd CMOSP w=25 l=2
++  ad=125 pd=60 as=500 ps=240
+M1001 a_505_n102# clk a_498_n102# Gnd CMOSN w=10 l=2
++  ad=50 pd=30 as=100 ps=60
+M1002 a_436_n102# clk gnd Gnd CMOSN w=10 l=2
++  ad=100 pd=60 as=200 ps=120
+M1003 d_out a_505_n102# gnd Gnd CMOSN w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1004 a_443_n102# clk vdd vdd CMOSP w=25 l=2
++  ad=125 pd=60 as=0 ps=0
+M1005 a_381_n112# d vdd vdd CMOSP w=25 l=2
++  ad=250 pd=120 as=0 ps=0
+M1006 a_498_n102# a_443_n102# gnd Gnd CMOSN w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 a_388_n150# d gnd Gnd CMOSN w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1008 a_505_n102# a_443_n102# vdd vdd CMOSP w=25 l=2
++  ad=125 pd=60 as=0 ps=0
+M1009 a_388_n150# clk a_381_n112# w_361_n92# CMOSP w=25 l=2
++  ad=125 pd=60 as=0 ps=0
+M1010 a_443_n102# a_388_n150# a_436_n102# Gnd CMOSN w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+C0 d gnd 0.04fF
+C1 a_443_n102# a_498_n102# 0.09fF
+C2 a_388_n150# a_443_n102# 0.05fF
+C3 a_443_n102# clk 0.05fF
+C4 a_388_n150# a_381_n112# 0.26fF
+C5 a_381_n112# clk 0.03fF
+C6 a_505_n102# a_498_n102# 0.10fF
+C7 gnd a_498_n102# 0.10fF
+C8 a_388_n150# gnd 0.10fF
+C9 a_505_n102# clk 0.05fF
+C10 gnd clk 0.04fF
+C11 a_381_n112# w_361_n92# 0.15fF
+C12 d_out vdd 0.35fF
+C13 a_505_n102# a_443_n102# 0.05fF
+C14 gnd a_443_n102# 0.04fF
+C15 a_388_n150# a_436_n102# 0.04fF
+C16 a_436_n102# clk 0.09fF
+C17 a_505_n102# gnd 0.04fF
+C18 a_436_n102# a_443_n102# 0.10fF
+C19 d vdd 0.15fF
+C20 gnd a_436_n102# 0.10fF
+C21 d_out a_505_n102# 0.05fF
+C22 d_out gnd 0.10fF
+C23 d a_388_n150# 0.05fF
+C24 vdd clk 0.15fF
+C25 clk a_498_n102# 0.04fF
+C26 a_388_n150# clk 0.05fF
+C27 vdd a_443_n102# 0.52fF
+C28 a_388_n150# w_361_n92# 0.06fF
+C29 w_361_n92# clk 0.12fF
+C30 vdd a_381_n112# 0.35fF
+C31 d a_381_n112# 0.09fF
+C32 vdd a_505_n102# 0.44fF
+C33 gnd Gnd 0.65fF
+C34 clk Gnd 0.31fF
+C35 d Gnd 0.18fF
+C36 a_498_n102# Gnd 0.19fF
+C37 a_436_n102# Gnd 0.19fF
+C38 a_388_n150# Gnd 0.21fF
+C39 d_out Gnd 0.11fF
+C40 a_505_n102# Gnd 0.23fF
+C41 a_381_n112# Gnd 0.13fF
+C42 a_443_n102# Gnd 0.72fF
+C43 w_361_n92# Gnd 2.12fF
+C44 vdd Gnd 7.06fF
+
+.tran 10ps 100n
+.control
+run
+
+meas tran tpcq_hl TRIG v(clk) val=0.9 rise=4 TARG v(d_out) val=0.9 fall=2
+meas tran tpcq_lh TRIG v(clk) val=0.9 rise=2 TARG v(d_out) val=0.9 rise=1 
+
+plot v(clk) v(d)+2 v(d_out)+4
+.endc
+.end
+

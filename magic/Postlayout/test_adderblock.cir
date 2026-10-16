@@ -1,0 +1,46 @@
+.include "TSMC_180nm.txt"
+.include "adder_post1.cir"
+
+.param supply=1.8
+
+vdd vdd gnd dc 1.8
+Vcin cin 0 0
+
+* ==========================================
+* Input Stimulus (PWL)
+* Test Cases:
+* 0ns:  A=00000 (0),  B=00000 (0)  -> S=00000 (0), C5=0
+* 10ns: A=00001 (1),  B=00001 (1)  -> S=00010 (2), C5=0
+* 20ns: A=11111 (31), B=00001 (1)  -> S=00000 (0), C5=1 (Overflow)
+* 30ns: A=01010 (10), B=10101 (21) -> S=11111 (31), C5=0
+* ==========================================
+
+* Input A (a1=LSB, a5=MSB)
+*Va1 a1 0 0
+Va1 a1 0 pulse(0 1.8 2ns 100ps 100ps 10ns 20ns)
+Va2 a2 0 0
+Va3 a3 0 0
+Va4 a4 0 0
+Va5 a5 0 0
+
+* Input B (b1=LSB, b5=MSB)
+Vb1 b1 0 1.8
+Vb2 b2 0 1.8
+Vb3 b3 0 1.8
+Vb4 b4 0 1.8
+Vb5 b5 0 1.8
+
+*.op
+.tran 1ns 500ns
+
+.control
+run
+meas tran t_in when v(a1)=0.9 RISE=1
+meas tran t_out when v(s4)=0.9 FALL=1
+let delay = t_out - t_in
+print delay
+
+*print v(s1) v(s2) v(s3) v(s4) v(s5) v(c5)
+
+.endc
+.end 

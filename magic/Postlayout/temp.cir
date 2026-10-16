@@ -1,0 +1,46 @@
+.include "TSMC_180nm.txt"
+.include "final_circuit_post.spice"
+
+.param supply=1.8
+
+vdd vdd gnd dc 1.8
+Vclk clk gnd PULSE(0 1.8 2ns 0ns 0ns 10ns 20ns)
+
+Va0 A0i gnd PULSE(0 1.8 30ns 0ns 0ns 200ns 400ns)
+Va1 A1i gnd 0
+Va2 A2i gnd 0
+Va3 A3i gnd 0
+Va4 A4i gnd 0
+
+Vb0 B0i gnd 1.8
+Vb1 B1i gnd 1.8
+Vb2 B2i gnd 1.8
+Vb3 B3i gnd 1.8
+Vb4 B4i gnd 1.8
+
+Vcin Cini gnd 0
+
+.tran 1ns 200ns
+
+* Delay Measurements 
+
+.measure tran cla_delay    TRIG v(A0i)  VAL=0.9 RISE=1  TARG v(s4)  VAL=0.9 FALL=1
+
+
+.control
+run
+
+set curplottitle=Inputs
+plot A0i A1i+2 A2i+4 A3i+6 A4i+8 B0i+10 B1i+12 B2i+14 B3i+16 B4i+18 Cini+20 clk+22
+
+set curplottitle=After_Input_DFF
+plot a0 a1+2 a2+4 a3+6 a4+8 b0+10 b1+12 b2+14 b3+16 b4+18 cin+20 clk+22
+
+set curplottitle=CLA_Internal
+plot s0 s1+2 s2+4 s3+6 s4+8 cout+10 clk+12
+
+set curplottitle=Final_Outputs
+plot s0o s1o+2 s2o+4 s3o+6 s4o+8 couto+10 clk+12
+
+.endc
+.end

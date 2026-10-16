@@ -1,0 +1,147 @@
+.include TSMC_180nm.txt
+.param LAMBDA=0.09u
+.param width_N={5*LAMBDA}
+.param width_P={10*LAMBDA}
+.param width_N_and={10*LAMBDA}
+.param width_P_and={10*LAMBDA}
+
+Vdd vdd 0 1.8
+
+Va0 a0 0 pulse(0 1.8 2ns 100ps 100ps 10ns 20ns)
+*Va0 a0 0 dc 1.8
+Va1 a1 0 dc 0
+Va2 a2 0 dc 0
+Va3 a3 0 dc 0
+Va4 a4 0 dc 0
+
+Vb0 b0 0 dc 1.8
+Vb1 b1 0 dc 1.8
+Vb2 b2 0 dc 1.8
+Vb3 b3 0 dc 1.8
+Vb4 b4 0 dc 1.8
+
+.subckt inv y x vdd 0
+mP1 y x vdd vdd CMOSP W=width_P L=0.18u
++ AS='5*width_P*LAMBDA' PS='10*LAMBDA+2*width_P'
++ AD='5*width_P*LAMBDA' PD='10*LAMBDA+2*width_P'
+
+mN1 y x 0 0 CMOSN W=width_N L=0.18u
++ AS='5*width_N*LAMBDA' PS='10*LAMBDA+2*width_N'
++ AD='5*width_N*LAMBDA' PD='10*LAMBDA+2*width_N'
+.ends inv
+
+.subckt nand Y A B vdd 0
+mP_nand_1 Y A vdd vdd CMOSP W=width_P_and L=0.18u
++ AS='5*width_P_and*LAMBDA' PS='10*LAMBDA+2*width_P_and'
++ AD='5*width_P_and*LAMBDA' PD='10*LAMBDA+2*width_P_and'
+
+mP_nand_2 Y B vdd vdd CMOSP W=width_P_and L=0.18u
++ AS='5*width_P_and*LAMBDA' PS='10*LAMBDA+2*width_P_and'
++ AD='5*width_P_and*LAMBDA' PD='10*LAMBDA+2*width_P_and'
+
+mN_nand_1 Y A mid_node 0 CMOSN W=width_N_and L=0.18u
++ AS='5*width_N_and*LAMBDA' PS='10*LAMBDA+2*width_N_and'
++ AD='5*width_N_and*LAMBDA' PD='10*LAMBDA+2*width_N_and'
+
+mN_nand_2 mid_node B 0 0 CMOSN W=width_N_and L=0.18u
++ AS='5*width_N_and*LAMBDA' PS='10*LAMBDA+2*width_N_and'
++ AD='5*width_N_and*LAMBDA' PD='10*LAMBDA+2*width_N_and'
+.ends nand
+
+.subckt nor Y A B vdd 0
+mP_nor_1 mid A vdd vdd CMOSP W=width_P L=0.18u
++ AS='5*width_P*LAMBDA' PS='10*LAMBDA+2*width_P'
++ AD='5*width_P*LAMBDA' PD='10*LAMBDA+2*width_P'
+
+mP_nor_2 Y B mid vdd CMOSP W=width_P L=0.18u
++ AS='5*width_P*LAMBDA' PS='10*LAMBDA+2*width_P'
++ AD='5*width_P*LAMBDA' PD='10*LAMBDA+2*width_P'
+
+mN_nor_1 Y A 0 0 CMOSN W=width_N L=0.18u
++ AS='5*width_N*LAMBDA' PS='10*LAMBDA+2*width_N'
++ AD='5*width_N*LAMBDA' PD='10*LAMBDA+2*width_N'
+
+mN_nor_2 Y B 0 0 CMOSN W=width_N L=0.18u
++ AS='5*width_N*LAMBDA' PS='10*LAMBDA+2*width_N'
++ AD='5*width_N*LAMBDA' PD='10*LAMBDA+2*width_N'
+.ends nor
+
+.subckt and Y A B vdd 0
+Xnand Y_not A B vdd 0 nand
+Xinv Y Y_not vdd 0 inv
+.ends and
+
+.subckt or Y A B vdd 0
+Xnor Y_bar A B vdd 0 nor
+Xinv Y Y_bar vdd 0 inv
+.ends or
+
+.subckt xor Y A B vdd 0
+Xnand1 n1 A B vdd 0 nand
+Xnand2 n2 A n1 vdd 0 nand
+Xnand3 n3 B n1 vdd 0 nand
+Xnand4 Y n2 n3 vdd 0 nand
+.ends xor
+
+.subckt graycell Pcurr Gcurr Gprev Gout vdd 0
+Xw1 w1 Pcurr Gprev vdd 0 and
+Xout Gout w1 Gcurr vdd 0 or
+.ends graycell
+
+.subckt blackcell Pcurr Gcurr Pprev Gprev Pout Gout vdd 0
+Xout1 Pcurr Gcurr Gprev Gout vdd 0 graycell
+Xout2 Pout Pprev Pcurr vdd 0 and
+.ends blackcell
+
+Xp0 p0 a0 b0 vdd 0 xor
+Xg0 g0 a0 b0 vdd 0 and
+
+Xp1 p1 a1 b1 vdd 0 xor
+Xg1 g1 a1 b1 vdd 0 and
+
+Xp2 p2 a2 b2 vdd 0 xor
+Xg2 g2 a2 b2 vdd 0 and
+
+Xp3 p3 a3 b3 vdd 0 xor
+Xg3 g3 a3 b3 vdd 0 and
+
+Xp4 p4 a4 b4 vdd 0 xor
+Xg4 g4 a4 b4 vdd 0 and
+
+XS1 S1 p1 g0 vdd 0 xor
+
+Xgs1 p1 g1 g0 C1 vdd 0 graycell
+XS2 S2 p2 C1 vdd 0 xor
+
+Xgs2 p2 g2 C1 C2 vdd 0 graycell
+XS3 S3 p3 C2 vdd 0 xor
+
+Xbs1 p3 g3 p2 g2 temp1 temp2 vdd 0 blackcell
+Xgs3 temp1 temp2 C1 C3 vdd 0 graycell
+XS4 S4 p4 C3 vdd 0 xor
+
+Xgs4 p4 g4 C3 Cout vdd 0 graycell
+
+*.op
+.tran 0.1ns 500ns
+
+.control
+set hcopypscolor=1
+set color0=white
+set color1=black
+set color2=red
+run
+
+*print v(a4) v(a3) v(a2) v(a1) v(a0)
+*print v(b4) v(b3) v(b2) v(b1) v(b0)
+*print v(Cout) v(S4) v(S3) v(S2) v(S1) v(p0)
+
+meas tran t_in when v(a0)=0.9 RISE=1
+meas tran t_out when v(S4)=0.9 FALL=1
+*meas tran t_out when v(p0)=0.9 RISE=1
+let delay = t_out - t_in
+print delay
+plot v(a0) v(b0)+2 v(s4)+6 v(Cout)+8
+
+.endc
+.end

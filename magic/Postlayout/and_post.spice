@@ -1,0 +1,75 @@
+* SPICE3 file created from and4.ext - technology: scmos
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.option scale=90n
+.global gnd vdd
+
+Vdd	vdd	gnd	'SUPPLY'
+
+
+M1000 a_78_63# a_72_77# a_71_63# Gnd CMOSN w=10 l=2
++  ad=50p pd=30u as=50p ps=30u
+M1001 a_198_29# inputA gnd Gnd CMOSN w=10 l=2
++  ad=50p pd=30u as=50p ps=30u
+M1002 a_78_63# a_72_77# a_71_91# w_65_85# CMOSP w=20 l=2
++  ad=100p pd=50u as=100p ps=50u
+M1003 OUTPUT a_206_49# gnd Gnd CMOSN w=10 l=2
++  ad=50p pd=30u as=50p ps=30u
+M1004 a_206_49# inputA vdd w_193_88# CMOSP w=20 l=2
++  ad=100p pd=50u as=100p ps=50u
+M1005 a_206_49# inputB a_198_29# Gnd CMOSN w=10 l=2
++  ad=50p pd=30u as=50p ps=30u
+M1006 a_206_49# a_233_80# vdd w_227_88# CMOSP w=20 l=2
++  ad=100p pd=50u as=100p ps=50u
+M1007 OUTPUT a_206_49# vdd w_259_88# CMOSP w=20 l=2
++  ad=100p pd=50u as=100p ps=50u
+C0 w_259_88# OUTPUT 0.00797f
+C1 inputA vdd 0.00153f
+C2 OUTPUT gnd 0.1361f
+C3 a_233_80# vdd 0.00153f
+C4 a_72_77# a_71_91# 0.00153f
+C5 w_193_88# inputA 0.0189f
+C6 a_206_49# vdd 0.47993f
+C7 a_72_77# a_78_63# 0.05983f
+C8 a_71_91# a_78_63# 0.2392f
+C9 inputA inputB 0.04018f
+C10 a_206_49# OUTPUT 0.05983f
+C11 w_65_85# a_72_77# 0.01892f
+C12 w_193_88# a_206_49# 0.00787f
+C13 w_227_88# a_233_80# 0.01884f
+C14 inputB a_198_29# 0.02846f
+C15 inputA gnd 0.05635f
+C16 a_233_80# inputB 0.0097f
+C17 w_65_85# a_71_91# 0.01468f
+C18 w_227_88# a_206_49# 0.00787f
+C19 gnd a_198_29# 0.12666f
+C20 a_72_77# a_71_63# 0.04309f
+C21 inputA a_198_29# 0.05668f
+C22 a_206_49# inputB 0.05825f
+C23 w_65_85# a_78_63# 0.00797f
+C24 w_259_88# a_206_49# 0.01892f
+C25 a_206_49# gnd 0.07746f
+C26 inputA a_206_49# 0.05838f
+C27 a_78_63# a_71_63# 0.1361f
+C28 vdd OUTPUT 0.2392f
+C29 a_206_49# a_198_29# 0.1031f
+C30 a_233_80# a_206_49# 0.16781f
+C31 w_193_88# vdd 0.01468f
+C32 w_227_88# vdd 0.01468f
+C33 w_259_88# vdd 0.01468f
+C34 a_198_29# 0 0.0492f **FLOATING
+C35 gnd 0 0.45852f **FLOATING
+C36 inputB 0 0.41319f **FLOATING
+C37 a_71_63# 0 0.0821f **FLOATING
+C38 OUTPUT 0 0.11339f **FLOATING
+C39 vdd 0 0.35609f **FLOATING
+C40 a_78_63# 0 0.11339f **FLOATING
+C41 a_71_91# 0 0.10443f **FLOATING
+C42 a_72_77# 0 0.22521f **FLOATING
+C43 a_206_49# 0 0.57519f **FLOATING
+C44 a_233_80# 0 0.63342f **FLOATING
+C45 inputA 0 0.45487f **FLOATING
+C46 w_259_88# 0 0.77138f **FLOATING
+C47 w_227_88# 0 0.77138f **FLOATING
+C48 w_193_88# 0 0.77138f **FLOATING
+C49 w_65_85# 0 0.77138f **FLOATING

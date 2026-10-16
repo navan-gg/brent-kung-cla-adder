@@ -1,0 +1,108 @@
+* SPICE3 file created from or2.ext - technology: scmos
+
+.option scale=90n
+
+M1000 a_353_50# inputB vdd w_347_44# pfet w=20 l=2
++  ad=100p pd=50u as=100p ps=50u
+M1001 a_78_63# a_72_77# a_71_63# Gnd nfet w=10 l=2
++  ad=50p pd=30u as=50p ps=30u
+M1002 a_198_29# inputA gnd Gnd nfet w=10 l=2
++  ad=50p pd=30u as=50p ps=30u
+M1003 output2 a_351_10# gnd Gnd nfet w=10 l=2
++  ad=50p pd=30u as=50p ps=30u
+M1004 a_78_63# a_72_77# a_71_91# w_65_85# pfet w=20 l=2
++  ad=100p pd=50u as=100p ps=50u
+M1005 OUTPUT a_206_49# gnd Gnd nfet w=10 l=2
++  ad=50p pd=30u as=50p ps=30u
+M1006 a_206_49# inputA vdd w_193_88# pfet w=20 l=2
++  ad=100p pd=50u as=100p ps=50u
+M1007 a_351_10# inputA gnd Gnd nfet w=10 l=2
++  ad=50p pd=30u as=50p ps=30u
+M1008 a_206_49# inputB a_198_29# Gnd nfet w=10 l=2
++  ad=50p pd=30u as=50p ps=30u
+M1009 output2 a_351_10# vdd w_396_44# pfet w=20 l=2
++  ad=100p pd=50u as=100p ps=50u
+M1010 a_351_10# inputA a_353_50# w_347_44# pfet w=20 l=2
++  ad=100p pd=50u as=100p ps=50u
+M1011 a_351_10# inputB gnd Gnd nfet w=10 l=2
++  ad=50p pd=30u as=50p ps=30u
+M1012 a_206_49# a_233_80# vdd w_227_88# pfet w=20 l=2
++  ad=100p pd=50u as=100p ps=50u
+M1013 OUTPUT a_206_49# vdd w_259_88# pfet w=20 l=2
++  ad=100p pd=50u as=100p ps=50u
+C0 w_193_88# inputA 0.0189f
+C1 inputB a_351_10# 0.05741f
+C2 a_198_29# gnd 0.12666f
+C3 w_396_44# output2 0.00797f
+C4 a_72_77# a_71_91# 0.00153f
+C5 a_206_49# inputA 0.05838f
+C6 inputB a_198_29# 0.02846f
+C7 w_65_85# a_78_63# 0.00797f
+C8 inputA vdd 0.00153f
+C9 inputB w_347_44# 0.04312f
+C10 output2 gnd 0.1361f
+C11 OUTPUT gnd 0.1361f
+C12 a_351_10# vdd 0.00153f
+C13 inputA a_353_50# 0.00145f
+C14 a_206_49# a_198_29# 0.1031f
+C15 inputB gnd 0.04309f
+C16 a_351_10# a_353_50# 0.2392f
+C17 w_347_44# vdd 0.01468f
+C18 a_78_63# a_71_91# 0.2392f
+C19 w_259_88# OUTPUT 0.00797f
+C20 a_206_49# OUTPUT 0.05983f
+C21 output2 vdd 0.2392f
+C22 OUTPUT vdd 0.2392f
+C23 a_233_80# inputB 0.0097f
+C24 w_396_44# vdd 0.01468f
+C25 w_347_44# a_353_50# 0.04343f
+C26 a_233_80# w_227_88# 0.01884f
+C27 a_206_49# gnd 0.07746f
+C28 a_206_49# inputB 0.05825f
+C29 a_206_49# w_227_88# 0.00787f
+C30 a_78_63# a_72_77# 0.05983f
+C31 a_233_80# a_206_49# 0.16781f
+C32 inputB vdd 0.05652f
+C33 inputA a_351_10# 0.27818f
+C34 w_65_85# a_71_91# 0.01468f
+C35 a_206_49# w_193_88# 0.00787f
+C36 w_227_88# vdd 0.01468f
+C37 a_233_80# vdd 0.00153f
+C38 a_198_29# inputA 0.05668f
+C39 w_193_88# vdd 0.01468f
+C40 a_206_49# w_259_88# 0.01892f
+C41 inputB a_353_50# 0.05668f
+C42 w_347_44# inputA 0.0191f
+C43 w_259_88# vdd 0.01468f
+C44 a_206_49# vdd 0.47993f
+C45 a_71_63# a_72_77# 0.04309f
+C46 w_347_44# a_351_10# 0.00797f
+C47 w_65_85# a_72_77# 0.01892f
+C48 output2 a_351_10# 0.05983f
+C49 vdd a_353_50# 0.2392f
+C50 gnd inputA 0.08276f
+C51 w_396_44# a_351_10# 0.01892f
+C52 inputB inputA 0.0507f
+C53 gnd a_351_10# 0.3153f
+C54 a_71_63# a_78_63# 0.1361f
+C55 gnd 0 0.8228f **FLOATING
+C56 output2 0 0.11339f **FLOATING
+C57 a_198_29# 0 0.0492f **FLOATING
+C58 a_351_10# 0 0.48013f **FLOATING
+C59 inputA 0 1.29919f **FLOATING
+C60 inputB 0 0.90951f **FLOATING
+C61 a_71_63# 0 0.0821f **FLOATING
+C62 a_353_50# 0 0.10518f **FLOATING
+C63 vdd 0 0.80309f **FLOATING
+C64 OUTPUT 0 0.11339f **FLOATING
+C65 a_78_63# 0 0.11339f **FLOATING
+C66 a_71_91# 0 0.10443f **FLOATING
+C67 a_72_77# 0 0.22521f **FLOATING
+C68 a_206_49# 0 0.57519f **FLOATING
+C69 a_233_80# 0 0.63342f **FLOATING
+C70 w_396_44# 0 0.77138f **FLOATING
+C71 w_347_44# 0 1.90434f **FLOATING
+C72 w_259_88# 0 0.77138f **FLOATING
+C73 w_227_88# 0 0.77138f **FLOATING
+C74 w_193_88# 0 0.77138f **FLOATING
+C75 w_65_85# 0 0.77138f **FLOATING

@@ -1,0 +1,232 @@
+.param SUPPLY=1.8
+.global gnd vdd
+.option scale=90n
+
+.param LAMBDA=0.09u
+.param width_N={5*LAMBDA}
+.param width_P={10*LAMBDA}
+.param width_N_and={10*LAMBDA}
+.param width_P_and={10*LAMBDA}
+
+.subckt inv y x vdd 0
+mP1 y x vdd vdd CMOSP W=width_P L=0.18u
++ AS='5*width_P*LAMBDA' PS='10*LAMBDA+2*width_P' 
++ AD='5*width_P*LAMBDA' PD='10*LAMBDA+2*width_P'
+
+mN1 y x 0 0 CMOSN W=width_N L=0.18u
++ AS='5*width_N*LAMBDA' PS='10*LAMBDA+2*width_N' 
++ AD='5*width_N*LAMBDA' PD='10*LAMBDA+2*width_N'
+.ends inv
+
+.subckt inv_large y x vdd 0
+mP1 y x vdd vdd CMOSP W={20*LAMBDA} L=0.18u
++ AS={5*20*LAMBDA*LAMBDA} PS={10*LAMBDA+2*20*LAMBDA} 
++ AD={5*20*LAMBDA*LAMBDA} PD={10*LAMBDA+2*20*LAMBDA}
+
+mN1 y x 0 0 CMOSN W={10*LAMBDA} L=0.18u
++ AS={5*10*LAMBDA*LAMBDA} PS={10*LAMBDA+2*10*LAMBDA} 
++ AD={5*10*LAMBDA*LAMBDA} PD={10*LAMBDA+2*10*LAMBDA}
+.ends inv_large
+
+.subckt xor Y A B vdd 0
+X1 Abar A vdd 0 inv
+X2 Bbar B vdd 0 inv
+
+M1 Y_weak Abar B 0 CMOSN W=width_N L=0.18u 
++ AS='5*width_N*LAMBDA' PS='10*LAMBDA+2*width_N' 
++ AD='5*width_N*LAMBDA' PD='10*LAMBDA+2*width_N'
+
+M2 Y_weak A Bbar 0 CMOSN W=width_N L=0.18u 
++ AS='5*width_N*LAMBDA' PS='10*LAMBDA+2*width_N' 
++ AD='5*width_N*LAMBDA' PD='10*LAMBDA+2*width_N'
+
+X3 Y_bar Y_weak vdd 0 inv
+X4 Y Y_bar vdd 0 inv
+.ends xor
+
+
+.subckt nor Y A B vdd 0
+mP_nor_1 mid A vdd vdd CMOSP W=width_P L=0.18u
++ AS='5*width_P*LAMBDA' PS='10*LAMBDA+2*width_P'
++ AD='5*width_P*LAMBDA' PD='10*LAMBDA+2*width_P'
+
+mP_nor_2 Y B mid vdd CMOSP W=width_P L=0.18u
++ AS='5*width_P*LAMBDA' PS='10*LAMBDA+2*width_P'
++ AD='5*width_P*LAMBDA' PD='10*LAMBDA+2*width_P'
+
+mN_nor_1 Y A 0 0 CMOSN W=width_N L=0.18u
++ AS='5*width_N*LAMBDA' PS='10*LAMBDA+2*width_N'
++ AD='5*width_N*LAMBDA' PD='10*LAMBDA+2*width_N'
+
+mN_nor_2 Y B 0 0 CMOSN W=width_N L=0.18u
++ AS='5*width_N*LAMBDA' PS='10*LAMBDA+2*width_N'
++ AD='5*width_N*LAMBDA' PD='10*LAMBDA+2*width_N'
+.ends nor
+
+.subckt or Y A B vdd 0
+Xnor Y_bar A B vdd 0 nor
+Xinv Y Y_bar vdd 0 inv
+.ends or
+
+.subckt nand Y A B vdd 0
+mP_nand_1 Y A vdd vdd CMOSP W=width_P_and L=0.18u
++ AS='5*width_P_and*LAMBDA' PS='10*LAMBDA+2*width_P_and'
++ AD='5*width_P_and*LAMBDA' PD='10*LAMBDA+2*width_P_and'
+
+mP_nand_2 Y B vdd vdd CMOSP W=width_P_and L=0.18u
++ AS='5*width_P_and*LAMBDA' PS='10*LAMBDA+2*width_P_and'
++ AD='5*width_P_and*LAMBDA' PD='10*LAMBDA+2*width_P_and'
+
+mN_nand_1 Y A mid_node 0 CMOSN W=width_N_and L=0.18u
++ AS='5*width_N_and*LAMBDA' PS='10*LAMBDA+2*width_N_and'
++ AD='5*width_N_and*LAMBDA' PD='10*LAMBDA+2*width_N_and'
+
+mN_nand_2 mid_node B 0 0 CMOSN W=width_N_and L=0.18u
++ AS='5*width_N_and*LAMBDA' PS='10*LAMBDA+2*width_N_and'
++ AD='5*width_N_and*LAMBDA' PD='10*LAMBDA+2*width_N_and'
+.ends nand
+
+.subckt and Y A B vdd 0
+Xnand Y_not A B vdd 0 nand
+Xinv Y Y_not vdd 0 inv
+.ends and
+
+.subckt DFF Q D clk vdd 0
+.param W={20*LAMBDA}
+M1 a D 0 0 CMOSN L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+
+M2 a clk s2d3 vdd CMOSP L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+
+M3 s2d3 D vdd vdd CMOSP L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+
+M4 d4s5 clk 0 0 CMOSN L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+
+M5 b a d4s5 0 CMOSN L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+
+M6 b clk vdd vdd CMOSP L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+
+M7 d7s8 b 0 0 CMOSN L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+
+M8 c clk d7s8 0 CMOSN L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+
+M9 c b vdd vdd CMOSP L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+
+M10 Q c 0 0 CMOSN L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+
+M11 Q c vdd vdd CMOSP L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+.ends DFF
+
+.subckt graycell Pcurr Gcurr Gprev Gout vdd 0
+Xw1 w1 Pcurr Gprev vdd 0 and
+Xout Gout w1 Gcurr vdd 0 or
+.ends graycell
+
+.subckt blackcell Pcurr Gcurr Pprev Gprev Pout Gout vdd 0
+Xout1 Pcurr Gcurr Gprev Gout vdd 0 graycell
+Xout2 Pout Pprev Pcurr vdd 0 and
+.ends blackcell
+
+*========================================
+* INPUT STAGE: 10 DFFs (5 for A inputs, 5 for B inputs)
+*========================================
+X_dff_a0 a0_q a0 clk vdd 0 DFF
+X_dff_a1 a1_q a1 clk vdd 0 DFF
+X_dff_a2 a2_q a2 clk vdd 0 DFF
+X_dff_a3 a3_q a3 clk vdd 0 DFF
+X_dff_a4 a4_q a4 clk vdd 0 DFF
+
+X_dff_b0 b0_q b0 clk vdd 0 DFF
+X_dff_b1 b1_q b1 clk vdd 0 DFF
+X_dff_b2 b2_q b2 clk vdd 0 DFF
+X_dff_b3 b3_q b3 clk vdd 0 DFF
+X_dff_b4 b4_q b4 clk vdd 0 DFF
+
+*========================================
+* CARRY LOOK AHEAD ADDER BLOCK
+*========================================
+*Compute P and G propagate and generate signals
+Xp0 p0 a0_q b0_q vdd 0 xor
+Xg0 g0 a0_q b0_q vdd 0 and
+
+Xp1 p1 a1_q b1_q vdd 0 xor
+Xg1 g1 a1_q b1_q vdd 0 and
+
+Xp2 p2 a2_q b2_q vdd 0 xor
+Xg2 g2 a2_q b2_q vdd 0 and
+
+Xp3 p3 a3_q b3_q vdd 0 xor
+Xg3 g3 a3_q b3_q vdd 0 and
+
+Xp4 p4 a4_q b4_q vdd 0 xor
+Xg4 g4 a4_q b4_q vdd 0 and
+
+*Compute sum bits
+XS0 S0 p0 0 vdd 0 xor
+
+Xgs1 p1 g1 g0 C1 vdd 0 graycell
+XS1 S1 p1 g0 vdd 0 xor
+
+Xgs2 p2 g2 C1 C2 vdd 0 graycell
+XS2 S2 p2 C1 vdd 0 xor
+
+Xbs1 p3 g3 p2 g2 temp1 temp2 vdd 0 blackcell
+Xgs3 temp1 temp2 C1 C3 vdd 0 graycell
+XS3 S3 p3 C2 vdd 0 xor
+
+Xgs4 p4 g4 C3 Cout vdd 0 graycell
+XS4 S4 p4 C3 vdd 0 xor
+
+*========================================
+* OUTPUT STAGE: 5 DFFs for Sum bits + Cout
+*========================================
+X_dff_s0 S0_q S0 clk vdd 0 DFF
+X_dff_s1 S1_q S1 clk vdd 0 DFF
+X_dff_s2 S2_q S2 clk vdd 0 DFF
+X_dff_s3 S3_q S3 clk vdd 0 DFF
+X_dff_s4 S4_q S4 clk vdd 0 DFF
+
+X_inv_s0 S0_inv S0_q vdd 0 inv_large
+X_inv_s1 S1_inv S1_q vdd 0 inv_large
+X_inv_s2 S2_inv S2_q vdd 0 inv_large
+X_inv_s3 S3_inv S3_q vdd 0 inv_large
+X_inv_s4 S4_inv S4_q vdd 0 inv_large
+
+
+.tran 1ns 2000ns
+
+.control
+set hcopypscolor=1
+set color0=white
+set color1=black
+set color2=red
+run
+
+*Plot input, intermediate, and output signals to verify timing
+plot V(a0) V(a1)+2 V(a2)+4 V(a3)+6 V(a4)+8 
+plot V(b0) V(b1)+2 V(b2)+4 V(b3)+6 V(b4)+8 
+plot V(S0_q) V(S1_q)+2 V(S2_q)+4 V(S3_q)+6 V(S4_q)+8 v(clk)+10
+
+.endc
+.end

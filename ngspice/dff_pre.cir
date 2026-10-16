@@ -1,0 +1,83 @@
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.param LAMBDA=0.09u
+.global gnd vdd
+
+*for manually calculating the setup and hold times.
+.param tD = 19828p 
+
+Vdd				vdd gnd			'SUPPLY'    
+Vclk clk gnd PULSE(0 'SUPPLY' 10n 100p 100p 10n 20n)
+
+*For tpcq calculations
+Vin D gnd pulse(0 1.8 20n 100p 100p 30n 60n)
+*For th, tsu calculations
+*Vin D gnd PULSE(0 1.8 'tD' 100p 100p 30n 60n)
+
+.subckt DFF Q D clk
+.param W={20*LAMBDA}
+M1 a D gnd gnd CMOSN
++ L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+M2 a clk s2d3 vdd CMOSP
++ L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+M3 s2d3 D vdd vdd CMOSP
++ L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+M4 d4s5 clk gnd gnd CMOSN
++ L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+M5 b a d4s5 gnd CMOSN
++ L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+M6 b clk vdd vdd CMOSP
++ L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+M7 d7s8 b gnd gnd CMOSN
++ L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+M8 c clk d7s8 gnd CMOSN
++ L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+M9 c b vdd vdd CMOSP
++ L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+M10 Q c gnd gnd CMOSN
++ L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+M11 Q c vdd vdd CMOSP
++ L={2*LAMBDA} W={W}
++ AS={5*W*LAMBDA} AD={5*W*LAMBDA}
++ PS={10*LAMBDA+2*W} PD={10*LAMBDA+2*W}
+.ends DFF
+
+X1 Q D clk DFF
+.ic V(Q)=0 V(c)=0 V(b)=0 V(a)=0 V(clk)=0
+.tran 10ps 100n
+
+.control
+set hcopypscolor=1
+set color0=white
+set color1=black
+run
+
+*for tpcqmax
+meas tran tpcq_hl TRIG v(clk) val=0.9 rise=4 TARG v(Q) val=0.9 fall=2
+*for tpcqmin
+meas tran tpcq_lh TRIG v(clk) val=0.9 rise=2 TARG v(Q) val=0.9 rise=2
+
+plot V(Q) V(D)+2 V(clk)+4 
+.endc
+
+.end

@@ -1,0 +1,9 @@
+# Verilog simulation output
+Verilog/tb_cla_adder
+*.vcd
+
+# Magic extraction intermediates
+*.ext
+
+# ngspice logs
+*.log
